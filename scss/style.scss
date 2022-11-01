@@ -2,13 +2,18 @@
 * Foundation
 * ========================== */
 
-@use "foundation";
+@use "foundation/_normalize";
+@use "foundation/_base";
 
 /** 
 * layout
 * ========================== */
 
-@use "layout";
+@use "layout/_footer";
+@use "layout/_header";
+@use "Layout/_main";
+@use "layout/_sidebar";
+@use "layout/_wrapper";
 
 /** 
 * Object
@@ -16,12 +21,18 @@
 
 /* Component ------------ */
 
-@use "object/component";
+@use "object/component/_button";
 
 /* Project ------------ */
 
-@use "object/project";
+@use "object/project/_articles";
+@use "object/project/_search-box";
+@use "object/project/_gallery";
+@use "object/project/_profile";
+
 
 /* Utility ------------ */
 
-@use "object/utility";
+@use "object/utility/_align";
+@use "object/utility/_display";
+@use "object/utility/_margin";
