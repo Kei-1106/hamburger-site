@@ -1,0 +1,15 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.c-list {
+    font-size: 20px;
+    font-weight: normal;
+    &__menu {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}

@@ -1,5 +1,4 @@
 .l-header {
-    padding: 67px 0;
     background-color: #fff7ef;
     &__inner {
         display: flex;
@@ -8,6 +7,10 @@
         padding: 0 31px 0 65px;
     }
     &__logo {
-        font-size: 4rem;
+        font-size: 64px;
+        font-weight: bold;
+    }
+    &__nav {
+        width: 545px;
     }
 }

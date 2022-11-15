@@ -1,0 +1,21 @@
+@use "sass:math";
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    &__img {
+        & img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__title {
+        position: relative;
+        top: 20px;
+        left: 19px;
+    }
+}

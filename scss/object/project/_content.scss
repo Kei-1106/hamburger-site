@@ -1,0 +1,9 @@
+.p-content {
+    margin: 120px 0 131px 0;
+    padding: 0 112px;
+    &__inner {
+        display: flex;
+        column-gap: 80px;
+        width: auto;
+    }
+}

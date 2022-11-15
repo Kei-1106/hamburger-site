@@ -1,0 +1,10 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.c-card {
+    &__title {
+        color: #eaeaea;
+        font-size: 80px;
+        font-weight: bold;
+    }
+}

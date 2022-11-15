@@ -1,0 +1,23 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-home {
+    background-color: #000;
+    width: 100%;
+    height: 530px;
+    position: relative;
+    &__visual {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 530px;
+            object-fit: cover;
+        }    
+    }
+    &__main {
+        position: absolute;
+        top: 231px;
+        left: 86px;
+    }
+}

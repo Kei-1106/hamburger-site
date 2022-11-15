@@ -2,18 +2,19 @@
 * Foundation
 * ========================== */
 
-@use "foundation/_normalize";
-@use "foundation/_base";
+@forward "foundation/base";
+@forward "foundation/normalize";
 
 /** 
 * layout
 * ========================== */
 
-@use "layout/_footer";
-@use "layout/_header";
-@use "Layout/_main";
-@use "layout/_sidebar";
-@use "layout/_wrapper";
+@forward "layout/footer";
+@forward "layout/header";
+@forward "layout/main";
+@forward "layout/sidebar";
+@forward "layout/wrapper";
+
 
 /** 
 * Object
@@ -21,18 +22,24 @@
 
 /* Component ------------ */
 
-@use "object/component/_button";
+@forward "object/component/button";
+@forward "object/component/card";
+@forward "object/component/list";
+@forward "object/component/text";
+
 
 /* Project ------------ */
 
-@use "object/project/_articles";
-@use "object/project/_search-box";
-@use "object/project/_gallery";
-@use "object/project/_profile";
-
+@forward "object/project/articles";
+@forward "object/project/card";
+@forward "object/project/content";
+@forward "object/project/home";
+@forward "object/project/search-box";
+@forward "object/project/sidebar";
 
 /* Utility ------------ */
 
-@use "object/utility/_align";
-@use "object/utility/_display";
-@use "object/utility/_margin";
+@forward "object/utility/align";
+@forward "object/utility/display";
+@forward "object/utility/margin";
+

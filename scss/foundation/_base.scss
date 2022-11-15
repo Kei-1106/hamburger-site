@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 html {
+    width: auto;
     height: 100%;
     font-size: 62.5%;
 }
 
 body {
     font-family: 'YuGothic', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'Roboto', Roboto, Osaka, sans-serif;
+    font-size: 16px;
 }
 
 img {
@@ -22,7 +24,7 @@ h1, h2, h3, h4, h5, h6, hr {
     list-style: none;
 }
 
-a {
+a,text,span {
     text-decoration: none;
-    color: #000;
+    color: #707070;
 }
