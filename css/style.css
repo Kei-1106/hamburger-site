@@ -344,6 +344,10 @@ template {
   display: none;
 }
 
+.l-footer {
+  padding: 30px 0;
+}
+
 .l-header {
   background-color: #fff7ef;
 }
@@ -354,6 +358,7 @@ template {
   padding: 0 31px 0 65px;
 }
 .l-header__logo {
+  margin: 67px 0;
   font-size: 64px;
   font-weight: bold;
 }
@@ -363,9 +368,9 @@ template {
 
 .l-sidebar {
   width: 367px;
-  height: 100%;
-  background-color: #f2ede9;
   padding-top: 82px;
+  float: right;
+  background-color: #f2ede9;
 }
 
 .l-wrapper {
@@ -452,42 +457,40 @@ template {
   display: flex;
 }
 
-.p-card {
-  box-sizing: border-box;
+.p-card__inner {
   width: 100%;
   height: auto;
 }
-.p-card__img img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.p-card__img--left {
+  background-image: url(/img/home_take-out_.jpg);
+  background-position: center;
 }
 .p-card__title {
   position: relative;
   top: 20px;
   left: 19px;
 }
+.p-card__link-layer {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-.p-content {
+.p-content__inner {
   margin: 120px 0 131px 0;
   padding: 0 112px;
-}
-.p-content__inner {
   display: flex;
   -moz-column-gap: 80px;
        column-gap: 80px;
   width: auto;
+  background-color: #fff;
 }
 
-.p-home {
+.p-home__visual {
   background-color: #000;
   width: 100%;
   height: 530px;
   position: relative;
-}
-.p-home__visual {
-  width: 100%;
-  height: 100%;
 }
 .p-home__visual img {
   width: 100%;

@@ -1,21 +1,25 @@
-@use "sass:math";
 @use "../../foundation/global" as g;
 @use "../../foundation/variables";
 
 .p-card {
-    box-sizing: border-box;
+    &__inner {
     width: 100%;
     height: auto;
+    }
     &__img {
-        & img {
-            display: block;
-            max-width: 100%;
-            height: auto;
+        &--left {
+            background-image: url(/img/home_take-out_.jpg);
+            background-position: center;
         }
     }
     &__title {
         position: relative;
         top: 20px;
         left: 19px;
+    }
+    &__link-layer {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 }
