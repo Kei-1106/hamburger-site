@@ -3,23 +3,52 @@
 
 .p-card {
     &__inner {
-    width: 100%;
-    height: auto;
+    padding: 20px;
+    height: 100%;
     }
     &__img {
+        width: 50%;
+        background-position: center;
+        background-size: cover;
         &--left {
             background-image: url(/img/home_take-out_.jpg);
-            background-position: center;
+        }
+        &--right {
+            background-image: url(/img/home-eat_in.jpg);
         }
     }
     &__title {
-        position: relative;
-        top: 20px;
-        left: 19px;
+        &--bottom {
+            display: block;
+            margin-bottom: 34.5px;
+        }
+        &::after {
+            content: "";
+            width: 63px;
+            height: 4px;
+            background-color: #fff;
+            display: block;
+        }
     }
-    &__link-layer {
-        display: block;
-        width: 100%;
+    &__item {
+        background-color:rgba($color: #fff, $alpha: 0.8);
+        width: auto;
+        padding: 12px 20px 20px 20px;
+        &--bottom {
+            display: block;
+            margin-bottom: 9px;
+        }
+    }
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         height: 100%;
+        &--middle-A {
+            row-gap: 660.5px;
+        }
+        &--middle-B {
+            row-gap: 20px;
+        }
     }
 }

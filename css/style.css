@@ -359,7 +359,7 @@ template {
 }
 .l-header__logo {
   margin: 67px 0;
-  font-size: 64px;
+  font-size: 6.4rem;
   font-weight: bold;
 }
 .l-header__nav {
@@ -423,25 +423,33 @@ template {
 
 .c-card__title {
   color: #eaeaea;
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: bold;
+}
+.c-card__item {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #3c2a10;
+}
+.c-card__text {
+  font-size: 1.6rem;
 }
 
 .c-list {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: normal;
 }
 .c-list__menu {
-  font-size: 34px;
+  font-size: 3.4rem;
   font-weight: bold;
 }
 .c-list__title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 .c-text__main {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   color: #fff;
 }
@@ -458,22 +466,51 @@ template {
 }
 
 .p-card__inner {
-  width: 100%;
-  height: auto;
+  padding: 20px;
+  height: 100%;
+}
+.p-card__img {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
 }
 .p-card__img--left {
   background-image: url(/img/home_take-out_.jpg);
-  background-position: center;
 }
-.p-card__title {
-  position: relative;
-  top: 20px;
-  left: 19px;
+.p-card__img--right {
+  background-image: url(/img/home-eat_in.jpg);
 }
-.p-card__link-layer {
+.p-card__title--bottom {
   display: block;
-  width: 100%;
+  margin-bottom: 34.5px;
+}
+.p-card__title::after {
+  content: "";
+  width: 63px;
+  height: 4px;
+  background-color: #fff;
+  display: block;
+}
+.p-card__item {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: auto;
+  padding: 12px 20px 20px 20px;
+}
+.p-card__item--bottom {
+  display: block;
+  margin-bottom: 9px;
+}
+.p-card__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100%;
+}
+.p-card__flex--middle-A {
+  row-gap: 660.5px;
+}
+.p-card__flex--middle-B {
+  row-gap: 20px;
 }
 
 .p-content__inner {
@@ -482,6 +519,7 @@ template {
   display: flex;
   -moz-column-gap: 80px;
        column-gap: 80px;
+  justify-content: space-between;
   width: auto;
   background-color: #fff;
 }
@@ -510,16 +548,17 @@ template {
 }
 .p-search-box__text {
   margin-right: 13px;
-  border: 1px solid;
+  border: 1px solid #707070;
   border-radius: 10px;
   width: 396px;
   height: 46px;
 }
 .p-search-box__button {
   padding: 12px 52px;
-  font-size: 16px;
   font-weight: bold;
-  border: 1px solid;
+  font-size: 1.6rem;
+  color: #707070;
+  border: 1px solid #707070;
   border-radius: 10px;
 }
 .p-search-box::before {
