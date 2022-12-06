@@ -1,0 +1,33 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-access {
+    &__inner {
+        width: 61.17%;
+        padding: 83px 134px 40px 119px;
+        &--color {
+            opacity: 0.29;
+            background: #000;
+        }
+    }
+    &__map {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+        }
+        & iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }    
+        &--img {
+            background-color: #000;
+        }
+    }
+}

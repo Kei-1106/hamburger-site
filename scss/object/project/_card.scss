@@ -33,10 +33,10 @@
     &__item {
         background-color:rgba($color: #fff, $alpha: 0.8);
         width: auto;
-        padding: 12px 20px 20px 20px;
+        padding: 12px 21px 20px 20px;
         &--bottom {
             display: block;
-            margin-bottom: 9px;
+            margin-bottom: 63.5px;
         }
     }
     &__flex {
@@ -49,6 +49,11 @@
         }
         &--middle-B {
             row-gap: 20px;
+        }
+    }
+    &__map {
+        &--bottom {
+            margin-bottom: 55.5px;
         }
     }
 }

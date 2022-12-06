@@ -4,6 +4,7 @@
 .p-search-box {
     display: inline-block;
     position: relative;
+    max-width: 100%;
     &__text{
         margin-right: 13px;
         border: 1px solid #707070;
