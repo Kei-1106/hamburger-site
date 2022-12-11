@@ -345,7 +345,22 @@ template {
 }
 
 .l-footer {
-  padding: 30px 0;
+  background: url(/img/footer_img.jpg);
+  padding: 39px 0 30px;
+  color: #fff;
+}
+.l-footer__inner {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 34px;
+}
+.l-footer__inner--left {
+  border-right: solid 2px #FFF;
+}
+.l-footer__inner--bottom {
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .l-header {
@@ -448,6 +463,7 @@ template {
 .c-card__map--text {
   font-size: 1.6rem;
   font-weight: bold;
+  line-height: 2;
 }
 .c-card__map--color {
   color: #eaeaea;
@@ -477,14 +493,13 @@ template {
   padding: 83px 134px 40px 119px;
 }
 .p-access__inner--color {
-  opacity: 0.29;
-  background: #000;
+  background-color: rgba(0, 0, 0, 0.29);
 }
 .p-access__map {
-  box-sizing: border-box;
   width: 100%;
   height: auto;
   position: relative;
+  z-index: -5;
 }
 .p-access__map::before {
   content: "";
@@ -494,8 +509,10 @@ template {
   width: 100%;
   height: 100%;
   position: absolute;
+  opacity: 60%;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 .p-access__map--img {
   background-color: #000;
@@ -546,6 +563,9 @@ template {
 .p-card__item--bottom {
   display: block;
   margin-bottom: 63.5px;
+}
+.p-card__item--bottom-2 {
+  margin-bottom: 55.5px;
 }
 .p-card__flex {
   display: flex;
