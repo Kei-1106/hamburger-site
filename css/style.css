@@ -413,11 +413,6 @@ template {
   font-size: 2.4rem;
 }
 
-.c-text {
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
 .c-background-color__item--brown {
   width: 676px;
   height: 471px;
@@ -482,6 +477,10 @@ template {
   font-weight: bold;
 }
 
+.c-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
 .c-text__main {
   font-size: 4rem;
   font-weight: bold;
@@ -612,35 +611,42 @@ template {
   left: 86px;
 }
 
-.p-search-box {
+.p-search {
+  width: 100%;
+  height: 100%;
+}
+.p-search-B {
   display: inline-block;
-  position: relative;
   max-width: 100%;
 }
-.p-search-box__text {
-  margin-right: 13px;
+.p-search__text {
   border: 1px solid #707070;
+  background-color: #fff;
   border-radius: 10px;
   width: 396px;
   height: 46px;
+  padding: 11px 12px;
 }
-.p-search-box__button {
+.p-search__button {
   padding: 12px 52px;
   font-weight: bold;
   font-size: 1.6rem;
   color: #707070;
   border: 1px solid #707070;
   border-radius: 10px;
+  cursor: pointer;
 }
-.p-search-box::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  background: url(/img/search01.png) no-repeat center center/auto 100%;
-  display: inline-block;
-  position: absolute;
-  top: 11px;
-  left: 7px;
+.p-search-right {
+  padding-right: 13px;
+}
+.p-search-box {
+  font-size: 100%;
+}
+.p-search-box__clearbutton::-webkit-search-cancel-button {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: center;
 }
 
 .p-sidebar {

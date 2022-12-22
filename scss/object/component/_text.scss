@@ -2,6 +2,8 @@
 @use "../../foundation/variables";
 
 .c-text {
+    font-size: 1rem;
+    line-height: 1.4;
     &__main {
         font-size: 4rem;
         font-weight: bold;

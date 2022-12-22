@@ -28,9 +28,32 @@
                         <a href="#">Hamburger</a>
                     </h1>
                     <nav>
-                        <form action="#" method="get" class="p-search-box">
-                            <input type="text" size="25" class="p-search-box__text" placeholder="">
-                            <input type="submit" value="検索" class="p-search-box__button">
+                        <form action="#" method="get" class="p-search">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-search-right">
+                                            <table class="p-search">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="p-search__text">
+                                                                <input type="search" size="25" class="p-search-box p-search-box__clearbutton" name="search" title="検索" placeholder=""
+                                                                style="width: 100%; margin: 0; padding:0; border: none; height: 100%; background: url(/img/search01.png)
+                                                                left center no-repeat ; outline: none; background-size: contain;">
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <input type="submit" value="検索" class="p-search__button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </form>
                     </nav>
                 </div>
