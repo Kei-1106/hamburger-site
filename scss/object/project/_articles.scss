@@ -1,0 +1,15 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-background-color__item--white-opacity {
+    width: 585px;
+    height: 166px;
+    background-color: #fff;
+    opacity: 80%;
+    }
+
+.p-picture-section {
+    &__inner {
+        display: flex;
+    }
+}
