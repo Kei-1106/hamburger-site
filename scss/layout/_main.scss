@@ -1,0 +1,27 @@
+@use "../foundation/global" as g;
+@use "../foundation/variables" as v;
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.l-main {
+    &-hide-contents {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        &-active {
+            display: block;
+            animation: opa 1s ease 0s both;
+            background-color: v.$color_black;
+        }
+    }
+}

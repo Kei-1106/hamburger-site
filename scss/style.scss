@@ -2,8 +2,8 @@
 * Foundation
 * ========================== */
 
-@forward "foundation/base";
 @forward "foundation/normalize";
+@forward "foundation/base";
 
 /** 
 * layout
@@ -13,8 +13,6 @@
 @forward "layout/header";
 @forward "layout/main";
 @forward "layout/sidebar";
-@forward "layout/wrapper";
-
 
 /** 
 * Object
@@ -22,9 +20,11 @@
 
 /* Component ------------ */
 
+@forward "object/component/background-color";
 @forward "object/component/button";
-@forward "object/component/card";
+@forward "object/component/icon";
 @forward "object/component/list";
+@forward "object/component/logo";
 @forward "object/component/text";
 
 
@@ -34,13 +34,9 @@
 @forward "object/project/articles";
 @forward "object/project/card";
 @forward "object/project/content";
-@forward "object/project/home";
 @forward "object/project/search-box";
-@forward "object/project/sidebar";
 
 /* Utility ------------ */
 
 @forward "object/utility/align";
 @forward "object/utility/display";
-@forward "object/utility/margin";
-

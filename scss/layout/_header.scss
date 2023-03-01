@@ -1,17 +1,60 @@
+@use "../foundation/global" as g;
+@use "../foundation/variables" as v;
+
 .l-header {
-    background-color: #fff7ef;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 31px 0 65px;
-    }
+    width: 375px;
+    height: 217px;
+    padding: 40px 0;
+    position: relative;
+    top: 0;
     &__logo {
-        margin: 67px 0;
-        font-size: 6.4rem;
-        font-weight: bold;
+        margin: 0 40px;
     }
-    &__nav {
-        width: 545px;
+    &__search {
+        padding-top: 38px;
+    }
+    &__hamburger {
+        position: absolute;
+        background-color: v.$color_orange-light;
+        top: 14px;
+        right: 16px;
+        z-index: 999;
+        & span:nth-child(1) {
+            display: block;
+            width: 32px;
+            height: 6px;
+            margin-left: auto;
+            transition: all .15s linear;
+        }
+        & span:nth-child(2) {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Roboto';
+            transition: all .15s linear;
+        }
+        & span:nth-child(3) {
+            display: block;
+            width: 32px;
+            height: 6px;
+            margin-left: auto;
+            transition: all .15s linear;
+        }
+        &-active {
+            background-color: v.$color_orange-verylight;
+            & span:nth-child(1) {
+                display: block;
+                transform: translateY(15px) rotate(45deg);
+                background-color: v.$color_gray;
+            }
+            & span:nth-child(2) {
+                opacity: 0;
+                margin: 8px 0;
+            }
+            & span:nth-child(3) {
+                display: block;
+                transform: translateY(-14px) rotate(-45deg);
+                background-color: v.$color_gray;
+            }
+        }
     }
 }

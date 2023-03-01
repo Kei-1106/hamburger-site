@@ -1,6 +1,24 @@
+@use "../foundation/global" as g;
+@use "../foundation/variables" as v;
+
 .l-sidebar {
-    width: 19.11%;
-    padding-top: 82px;
-    float: right;
-    background-color: #f2ede9;
+    width: 328px;
+    height: 100vh;
+    margin-left: 47px;
+    &__hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(100%);
+    transition: ease .4s;
+    z-index: 998;
+    &-active {
+        transform: translateX(0);
+    }
+    }
+    &__item {
+        width: 100%;
+        height: auto;
+    }
 }
