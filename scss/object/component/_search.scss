@@ -1,0 +1,33 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables" as v;
+
+.c-search {
+    width: 212px;
+    height: auto;
+    border-radius: 10px;
+    border: v.$box_border;
+    font-size: 1.6rem;
+    font-family: "M+1m";
+    &--icon {
+        position: relative;
+        background: url(/img/search01.png);
+        width: 24px;
+        height: 24px;
+        z-index: 900;
+        &--focus {
+            position: relative;
+            background: none;
+            width: 24px;
+            height: 24px;
+            z-index: 900;
+                }
+    }
+    &--button {
+        width: 78px;
+        height: 46px;
+        border-radius: 10px;
+        border: v.$box_border;
+        font-size: 1.6rem;
+        font-family: "M+1m";
+    }
+}

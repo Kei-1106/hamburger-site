@@ -323,7 +323,6 @@ html {
 
 body {
   font-family: "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Roboto", Roboto, "M+ 1m", Osaka, sans-serif;
-  font-size: 16px;
 }
 
 img {
@@ -332,7 +331,7 @@ img {
 
 html, body,
 p, ol, ul, li, dl, dt, dd,
-blockquote, figure, fieldset, legend, textarea, pre, iframe, span, button,
+blockquote, figure, fieldset, legend, textarea, pre, iframe, span, button, table, input,
 h1, h2, h3, h4, h5, h6, hr {
   margin: 0;
   padding: 0;
@@ -344,22 +343,23 @@ a, text, span {
   color: #707070;
 }
 
-button, input {
+button, input[type=button] {
   cursor: pointer;
 }
 
 .l-header {
   width: 375px;
-  height: 217px;
   padding: 40px 0;
   position: relative;
   top: 0;
+  z-index: 1000;
 }
 .l-header__logo {
   margin: 0 40px;
 }
 .l-header__search {
   padding-top: 38px;
+  margin: 0 31px 0 24px;
 }
 .l-header__hamburger {
   position: absolute;
@@ -496,6 +496,56 @@ button, input {
 .c-logo {
   font-size: 4rem;
   font-weight: bold;
+}
+
+.c-search {
+  width: 212px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  font-size: 1.6rem;
+  font-family: "M+1m";
+}
+.c-search--icon {
+  position: relative;
+  background: url(/img/search01.png);
+  width: 24px;
+  height: 24px;
+  z-index: 900;
+}
+.c-search--icon--focus {
+  position: relative;
+  background: none;
+  width: 24px;
+  height: 24px;
+  z-index: 900;
+}
+.c-search--button {
+  width: 78px;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  font-size: 1.6rem;
+  font-family: "M+1m";
+}
+
+.c-text {
+  border: none;
+  outline: none;
+  width: 212px;
+  height: 24px;
+  position: absolute;
+}
+
+.p-search-box {
+  display: flex;
+  align-items: center;
+}
+.p-search-box__inner {
+  display: flex;
+  background-color: #fff;
+  margin-right: 12px;
+  padding: 11px 0 11px 16px;
 }
 
 /** 

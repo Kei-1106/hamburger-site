@@ -1,3 +1,13 @@
 @use "../../foundation/global" as g;
 @use "../../foundation/variables" as v;
 
+.p-search-box {
+    display: flex;
+    align-items: center;
+    &__inner {
+        display: flex;
+        background-color: #fff;
+        margin-right: 12px;
+        padding: 11px 0 11px 16px;
+    }
+}
