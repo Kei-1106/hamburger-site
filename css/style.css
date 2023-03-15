@@ -322,7 +322,7 @@ html {
 }
 
 body {
-  font-family: "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Roboto", Roboto, "M+ 1m", Osaka, sans-serif;
+  font-family: "M+ 1m", Meiryo, "Roboto", Roboto, "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Osaka, sans-serif;
 }
 
 img {
@@ -352,7 +352,14 @@ button, input[type=button] {
   padding: 40px 0;
   position: relative;
   top: 0;
-  z-index: 1000;
+  z-index: 800;
+}
+.l-header-active {
+  width: 375px;
+  padding: 40px 0;
+  position: relative;
+  top: 0;
+  z-index: unset;
 }
 .l-header__logo {
   margin: 0 40px;
@@ -366,7 +373,7 @@ button, input[type=button] {
   background-color: #FFF7EF;
   top: 14px;
   right: 16px;
-  z-index: 999;
+  z-index: 900;
 }
 .l-header__hamburger span:nth-child(1) {
   display: block;
@@ -429,7 +436,7 @@ button, input[type=button] {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 900;
+  z-index: 700;
 }
 .l-main-hide-contents-active {
   display: block;
@@ -456,7 +463,7 @@ button, input[type=button] {
   width: 100%;
   transform: translateX(100%);
   transition: ease 0.4s;
-  z-index: 998;
+  z-index: 850;
 }
 .l-sidebar__hamburger-active {
   transform: translateX(0);
@@ -511,7 +518,7 @@ button, input[type=button] {
   background: url(/img/search01.png);
   width: 24px;
   height: 24px;
-  z-index: 900;
+  z-index: 600;
 }
 .c-search--icon--focus {
   position: relative;
@@ -535,6 +542,22 @@ button, input[type=button] {
   width: 212px;
   height: 24px;
   position: absolute;
+}
+
+.p-home {
+  width: 375px;
+  height: 285px;
+}
+.p-home__mainvisual {
+  background-image: url(/img/mainvisual-iphone.jpg);
+  background-size: contain;
+  width: auto;
+  height: 100%;
+}
+.p-home__title {
+  padding: 121px 134px 115px 25px;
+  font-size: 3.6rem;
+  color: #fff;
 }
 
 .p-search-box {

@@ -1,0 +1,18 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables" as v;
+
+.p-home {
+    width: 375px;
+    height: 285px;
+    &__mainvisual {
+        background-image: url(/img/mainvisual-iphone.jpg);
+        background-size: contain;
+        width: auto;
+        height: 100%;
+    }
+    &__title {
+        padding: 121px 134px 115px 25px;
+        font-size: 3.6rem;
+        color: v.$color_white;
+    }
+}
