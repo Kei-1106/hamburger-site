@@ -1,2 +1,9 @@
 @use "../../foundation/global" as g;
 @use "../../foundation/variables" as v;
+
+.u-display {
+    width: 375px;
+    &__flex {
+        display: flex;
+    }
+}

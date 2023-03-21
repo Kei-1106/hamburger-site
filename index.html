@@ -19,21 +19,85 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <header class="l-header c-background-color__orange-light">
-        <div class="l-header__logo">
-            <h1 class="c-logo">
-                <a href="#">Hamburger</a>
-            </h1>
-        </div>
-        <form action="#" method="get" class="l-header__search">
-            <div class="p-search-box">
-                <div class="p-search-box__inner c-search">
-                    <i class="c-search--icon"></i>
-                        <input type="text" class="c-text" name="" title="検索" placeholder="">
+    <div class="u-display__flex">
+        <div class="u-display">
+            <header class="l-header c-background-color__orange-light">
+                <div class="l-header__logo">
+                    <h1 class="c-logo">
+                        <a href="#">Hamburger</a>
+                    </h1>
                 </div>
-                <input type="button" value="検索" class="c-search--button">
-            </div>
-        </form>
+                <form action="#" method="get" class="l-header__search">
+                    <div class="p-search-box">
+                        <div class="p-search-box__inner c-search">
+                            <i class="c-search--icon"></i>
+                            <input type="text" class="c-text" name="" title="検索" placeholder="">
+                        </div>
+                        <input type="button" value="検索" class="c-search--button">
+                    </div>
+                </form>
+                    <button class="l-header__hamburger c-button__hamburger js-hamburger">
+                        <span></span>
+                        <span>Menu</span>
+                        <span></span>
+                    </button>
+                </header>
+            <main>
+                <div class="p-home">
+                    <div class="p-home__mainvisual">
+                        <div class="p-home__title">ダミーサイト</div>
+                    </div>
+                </div>
+                <div class="l-main">
+                    <div class="p-content u-display__flex">
+                        <a class="p-card__link" href="#">
+                            <section class="p-card p-card--img p-card--img-left">
+                                <div class="p-card__inner p-card__inner--middle-A u-display__flex">
+                                    <div class="p-card__title">
+                                        <h2 class="p-card__title--bottom c-title">Take Out</h2>
+                                    </div>
+                                    <div class="p-card__inner p-card__inner--middle-B u-display__flex">
+                                        <div class="p-card__item c-background-color__white">
+                                            <span class="p-card__item--bottom c-title--item">Take OUT</span>
+                                            <p class="c-text--item">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当</p>
+                                        </div>
+                                        <div class="p-card__item c-background-color__white">
+                                            <span class="p-card__item--bottom c-title--item">Take OUT</span>
+                                            <p class="c-text--item">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="p-card__link" href="#">
+                            <section class="p-card p-card--img p-card--img-right">
+                                <div class="p-card__inner p-card__inner--middle-A u-display__flex">
+                                    <div class="p-card__title">
+                                        <h2 class="p-card__title--bottom c-title">Eat In</h2>
+                                    </div>
+                                    <div class="p-card__inner p-card__inner--middle-B u-display__flex">
+                                        <div class="p-card__item c-background-color__white">
+                                            <span class="p-card__item--bottom c-title--item">Eat In</span>
+                                            <p class="c-text--item">
+                                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                            </p>
+                                        </div>
+                                        <div class="p-card__item c-background-color__white">
+                                            <span class="p-card__item--bottom c-title--item">Eat In</span>
+                                            <p class="c-text--item">
+                                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
         <div class="l-sidebar__hamburger">
             <nav class="l-sidebar c-background-color__orange-verylight">
                 <ul class="l-sidebar__inner c-list">
@@ -72,19 +136,7 @@
                 </ul>
             </nav>
         </div>
-        <button class="l-header__hamburger c-button__hamburger js-hamburger">
-            <span></span>
-            <span>Menu</span>
-            <span></span>
-        </button>
-    </header>
-    <main>
-        <div class="p-home">
-            <div class="p-home__mainvisual">
-                <div class="p-home__title">ダミーサイト</div>
-            </div>
-        </div>
-    </main>
-    <div class="l-main-hide-contents"></div>
+        <div class="l-main-hide-contents"></div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,13 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables" as v;
+
+.p-content {
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 800;
+    transition: all .15s linear;
+    &-active {
+        z-index: unset;
+    }
+}

@@ -2,16 +2,11 @@
 @use "../foundation/variables" as v;
 
 .l-header {
-    width: 375px;
     padding: 40px 0;
     position: relative;
     top: 0;
     z-index: 800;
     &-active {
-        width: 375px;
-        padding: 40px 0;
-        position: relative;
-        top: 0;
         z-index: unset;
     }
     &__logo {

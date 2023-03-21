@@ -1,3 +1,50 @@
 @use "../../foundation/global" as g;
-@use "../../foundation/variables";
+@use "../../foundation/variables" as v;
 
+.p-card {
+    padding: 11px 15px 15px 15px;
+    &--img {
+        background-position: center;
+        background-size: cover;
+        &-left {
+            background-image: url(/img/home_take-out_.jpg);
+        }
+        &-right {
+            background-image: url(/img/home-eat_in.jpg);
+        }
+    }
+    &__title {
+        &--bottom {
+            display: block;
+            margin-bottom: 15.3px;
+        }
+        &::after {
+            content: "";
+            width: 33.89px;
+            height: 4px;
+            background-color: #fff;
+            display: block;
+        }
+    }
+    &__inner {
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        &--middle {
+            &-A {
+                gap: 283.7px;
+            }
+            &-B {
+                gap: 20px;
+            }
+        }
+    }
+    &__item {
+        padding: 7px 10px 15px 10px;
+        opacity: 0.8;
+        &--bottom {
+            display: block;
+            padding-bottom: 3px;
+        }
+    }
+}

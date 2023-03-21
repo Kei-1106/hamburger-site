@@ -14,17 +14,21 @@ $(function(){
 
 $(function(){
 const ham = $(".js-hamburger");
-const btn = $(".l-header__hamburger");
-const side = $(".l-sidebar__hamburger");
-const hide = $(".l-main-hide-contents");
-const head = $(".l-header")
-
 var durationSideMenu = 300;
 
 ham.on('click', function(){
-    side.toggleClass("l-sidebar__hamburger-active");
-    btn.toggleClass("l-header__hamburger-active");
-    hide.toggleClass("l-main-hide-contents-active");
-    head.toggleClass("l-header-active");
+    $(".l-sidebar__hamburger").toggleClass("l-sidebar__hamburger-active");
+    $(".l-header__hamburger").toggleClass("l-header__hamburger-active");
+    $(".l-main-hide-contents").toggleClass("l-main-hide-contents-active");
+    $(".l-header").toggleClass("l-header-active");
+    $(".p-content").toggleClass("p-content-active");
     });
 });
+
+$(function(){
+    const ham = $(".js-hamburger");
+    var durationSideMenu = 200;
+    
+    ham.on('click', function(){
+        });
+    });
