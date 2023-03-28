@@ -1,10 +1,10 @@
 $(function(){
     //フォーカス時にアイコンを消す
-    $(".c-text").focus(function(){
+    $(".c-icon").focus(function(){
         $(".c-search--icon").addClass("c-search--icon--focus");
     });
     //フォーカスが外れた時、空ならばアイコンを表示
-    $(".c-text").blur(function(){
+    $(".c-icon").blur(function(){
         if($(this).val() == ""){
             $(".c-search--icon").removeClass("c-search--icon--focus");
         }

@@ -1,6 +1,5 @@
-@use "../../foundation/global" as g;
+@use "../../foundation/mixin" as m;
 @use "../../foundation/variables" as v;
-
 .p-card {
     padding: 11px 15px 15px 15px;
     &--img {

@@ -1,14 +1,17 @@
-@use "../../foundation/global" as g;
+@use "../../foundation/mixin" as m;
 @use "../../foundation/variables" as v;
 
 .c-text {
-    border: none;
-    outline: none;
-    width: 212px;
-    height: 24px;
-    position: absolute;
+    color: v.$color_white;
+    line-height: 2.3;
+    font-size: 1.4rem;
     &--item {
         font-size: 1.6rem;
+        line-height: 1.4;
         color: v.$color_brown;
+    }
+    &--foot {
+        color: v.$color_white;
+        font-size: 2rem;
     }
 }

@@ -1,6 +1,5 @@
-@use "../foundation/global" as g;
+@use "../foundation/mixin" as m;
 @use "../foundation/variables" as v;
-
 @keyframes opa {
     0% {
         opacity: 0;

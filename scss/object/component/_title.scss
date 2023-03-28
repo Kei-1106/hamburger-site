@@ -1,4 +1,4 @@
-@use "../../foundation/global" as g;
+@use "../../foundation/mixin" as m;
 @use "../../foundation/variables" as v;
 
 .c-title {
@@ -9,5 +9,9 @@
     &--item {
         font-size: 2.2rem;
         color: v.$color_brown;
+    }
+    &--access {
+        color: v.$color_white;
+        font-size: 3rem;
     }
 }

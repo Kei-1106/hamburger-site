@@ -1,0 +1,6 @@
+//ブレイクポイント
+
+$breakpoint: (
+    'tb': 'screen and (min-width: 376px) and (max-width: 834px)',//タブレットの設定
+    'pc': 'screen and (min-width: 835px)',//PCの設定
+);

@@ -1,11 +1,11 @@
-@use "../../foundation/global" as g;
+@use "../../foundation/mixin" as m;
 @use "../../foundation/variables" as v;
 
 .p-home {
     width: 375px;
     height: 285px;
     &__mainvisual {
-        background-image: url(/img/mainvisual-iphone.jpg);
+        background-image: url(/img/mainvisual-smart.jpg);
         background-size: contain;
         width: auto;
         height: 100%;

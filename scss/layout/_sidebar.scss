@@ -1,11 +1,8 @@
-@use "../foundation/global" as g;
+@use "../foundation/mixin" as m;
 @use "../foundation/variables" as v;
 
 .l-sidebar {
-    margin-left: 47px;
-    padding-bottom: 100%;
     width: 328px;
-    height: auto;
     &__inner {
         padding-top: 212px;
     }
@@ -13,15 +10,11 @@
         padding-left: 46px;
     }
     &__hamburger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: ease .4s;
     z-index: 850;
     &-active {
-        transform: translateX(0);
+        transform: translateX(-328px);
     }
     }
     &__item {
