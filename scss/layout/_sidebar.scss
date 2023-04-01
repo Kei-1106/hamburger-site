@@ -13,8 +13,11 @@
     transform: translateX(0);
     transition: ease .4s;
     z-index: 850;
+    position: absolute;
+    top: 0;
+    left: 375px;
     &-active {
-        transform: translateX(-328px);
+        transform: translateX(-100%);
     }
     }
     &__item {

@@ -1,6 +1,23 @@
-//ブレイクポイント
+//冒頭に使うサイズを明記
+$sizes: 'sm', 'tb', 'pc';
 
+//ブレイクポイント
 $breakpoint: (
+    'sm': 'screen and (max-width: 375px)',//スマートフォンの設定
     'tb': 'screen and (min-width: 376px) and (max-width: 834px)',//タブレットの設定
     'pc': 'screen and (min-width: 835px)',//PCの設定
-);
+) !default;
+
+//mixinを定義
+@mixin mq($sizes: 'sm'){
+    @media #{ map-get( $breakpoint, $sizes)}{
+        @content;
+    }
+}
+
+//flexの設定
+@mixin flex($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
