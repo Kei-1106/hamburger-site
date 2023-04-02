@@ -2,7 +2,12 @@
 @use "../../foundation/variables" as v;
 
 .c-search {
-    width: 212px;
+    @include m.mq(){
+        width: 212px;
+    }
+    @include m.mq(tb){
+        width: 384px;
+    }
     height: auto;
     border-radius: 10px;
     border: v.$box_border;

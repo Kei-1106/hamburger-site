@@ -2,7 +2,5 @@
 @use "../../foundation/variables" as v;
 
 .u-align {
-    &--center {
-        text-align: center;
-    }
+    text-align: center;
 }

@@ -5,12 +5,9 @@
     height: 150px;
     background-image: url(/img/footer_img-smart.jpg);
     &__inner {
-        position: relative;
         z-index: 800;
         padding: 39px 0 34px 0;
-        &--left {
-            margin-left: 63px;
-        }
+        justify-content: center;
         &--right{
             border-left: solid 2px v.$color_white;
         }

@@ -2,8 +2,13 @@
 @use "../../foundation/variables" as v;
 
 .u-display {
-    width: 375px;
+    @include m.mq(){
+        width: 375px;
+    }
+    @include m.mq(tb){
+        width: 834px;
+    }
     &__flex {
         display: flex;
-        }
     }
+}

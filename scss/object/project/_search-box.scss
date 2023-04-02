@@ -4,10 +4,16 @@
 .p-search-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     &__inner {
         display: flex;
         background-color: #fff;
         margin-right: 12px;
-        padding: 11px 0 11px 16px;
+        @include m.mq(){
+            padding: 11px 0 11px 16px;
+        }
+        @include m.mq(tb){
+            padding: 11px 0 11px 12px;
+        }
     }
 }

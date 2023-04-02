@@ -350,12 +350,9 @@ button, input[type=button], a {
   background-image: url(/img/footer_img-smart.jpg);
 }
 .l-footer__inner {
-  position: relative;
   z-index: 800;
   padding: 39px 0 34px 0;
-}
-.l-footer__inner--left {
-  margin-left: 63px;
+  justify-content: center;
 }
 .l-footer__inner--right {
   border-left: solid 2px #fff;
@@ -365,20 +362,15 @@ button, input[type=button], a {
 }
 
 .l-header {
-  padding: 40px 0;
   position: relative;
-  top: 0;
   z-index: 800;
+  padding: 40px 0;
 }
 .l-header-active {
   z-index: unset;
 }
-.l-header__logo {
-  margin: 0 40px;
-}
 .l-header__search {
   padding-top: 38px;
-  margin: 0 31px 0 24px;
 }
 .l-header__hamburger {
   position: absolute;
@@ -475,10 +467,27 @@ button, input[type=button], a {
   z-index: 850;
   position: absolute;
   top: 0;
-  left: 375px;
+  bottom: 0;
 }
-.l-sidebar__hamburger-active {
-  transform: translateX(-100%);
+@media screen and (max-width: 375px) {
+  .l-sidebar__hamburger {
+    right: -375px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-sidebar__hamburger {
+    right: -367px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .l-sidebar__hamburger-active {
+    transform: translateX(-328px);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-sidebar__hamburger-active {
+    transform: translateX(-367px);
+  }
 }
 .l-sidebar__item {
   margin-top: 22px;
@@ -531,12 +540,21 @@ button, input[type=button], a {
 }
 
 .c-search {
-  width: 212px;
   height: auto;
   border-radius: 10px;
   border: 1px solid #707070;
   font-size: 1.6rem;
   font-family: "M+1m";
+}
+@media screen and (max-width: 375px) {
+  .c-search {
+    width: 212px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-search {
+    width: 384px;
+  }
 }
 .c-search--icon {
   position: relative;
@@ -710,23 +728,44 @@ button, input[type=button], a {
 .p-search-box {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .p-search-box__inner {
   display: flex;
   background-color: #fff;
   margin-right: 12px;
-  padding: 11px 0 11px 16px;
+}
+@media screen and (max-width: 375px) {
+  .p-search-box__inner {
+    padding: 11px 0 11px 16px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-search-box__inner {
+    padding: 11px 0 11px 12px;
+  }
 }
 
-.u-align--center {
+.u-align {
   text-align: center;
 }
 
-.u-display {
-  width: 375px;
+@media screen and (max-width: 375px) {
+  .u-display {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .u-display {
+    width: 834px;
+  }
 }
 .u-display__flex {
   display: flex;
+}
+
+.u-position {
+  position: relative;
 }
 
 /** 

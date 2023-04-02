@@ -15,9 +15,20 @@
     z-index: 850;
     position: absolute;
     top: 0;
-    left: 375px;
+    bottom: 0;
+    @include m.mq(){
+        right: -375px;
+    }
+    @include m.mq(tb){
+        right: -367px;
+    }
     &-active {
-        transform: translateX(-100%);
+        @include m.mq(){
+            transform: translateX(-328px);
+        }
+        @include m.mq(tb){
+            transform: translateX(-367px);
+        }
     }
     }
     &__item {
