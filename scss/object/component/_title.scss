@@ -3,15 +3,19 @@
 
 .c-title {
     color: v.$color_gray-light;
-    font-family: "Roboto";
-    font-size: 4.1rem;
-    font-weight: bold;
+    @include m.roboto;
+    @include m.fz(41);
+    @include m.bold;
     &--item {
-        font-size: 2.2rem;
+        @include m.fz(22);
         color: v.$color_brown;
     }
     &--access {
         color: v.$color_white;
-        font-size: 3rem;
+        @include m.fz(30);
+        }
+    &--site {
+        @include m.fz(36);
+        color: v.$color_white;
     }
 }

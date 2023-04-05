@@ -1,12 +1,12 @@
 $(function(){
     //フォーカス時にアイコンを消す
-    $(".c-icon").focus(function(){
-        $(".c-search--icon").addClass("c-search--icon--focus");
+    $(".c-search").focus(function(){
+        $(".c-icon").addClass("c-icon--focus");
     });
     //フォーカスが外れた時、空ならばアイコンを表示
-    $(".c-icon").blur(function(){
+    $(".c-search").blur(function(){
         if($(this).val() == ""){
-            $(".c-search--icon").removeClass("c-search--icon--focus");
+            $(".c-icon").removeClass("c-icon--focus");
         }
     });
 });

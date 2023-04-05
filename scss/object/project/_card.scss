@@ -2,6 +2,9 @@
 @use "../../foundation/variables" as v;
 .p-card {
     padding: 11px 15px 15px 15px;
+    @include m.mq(){
+        min-height: 616px;
+    }
     &--img {
         background-position: center;
         background-size: cover;
@@ -27,13 +30,15 @@
     }
     &__inner {
         flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
         &--middle {
-            &-A {
-                gap: 283.7px;
+            @include m.mq(){
+                min-height: 616px;
             }
-            &-B {
+            @include m.mq(tb){
+                min-height: 681px;
+            }
+            justify-content: space-between;
+            &-bottom {
                 gap: 20px;
             }
         }
@@ -44,6 +49,11 @@
         &--bottom {
             display: block;
             padding-bottom: 3px;
+        }
+    }
+    &__link {
+        @include m.mq(tb){
+            width: 50%;
         }
     }
 }

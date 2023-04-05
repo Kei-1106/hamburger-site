@@ -2,8 +2,14 @@
 @use "../foundation/variables" as v;
 
 .l-footer {
-    height: 150px;
-    background-image: url(/img/footer_img-smart.jpg);
+    height: 120px;
+    padding-bottom: 30px;
+    @include m.mq(){
+        background-image: url(/img/footer_img-smart.jpg);
+    }
+    @include m.mq(tb){
+        background-image: url(/img/footer_img-tablet.jpg);
+    }
     &__inner {
         z-index: 800;
         padding: 39px 0 34px 0;
@@ -11,8 +17,5 @@
         &--right{
             border-left: solid 2px v.$color_white;
         }
-        &--bottom {
-            padding-bottom: 30px;
-        }    
     }
 }

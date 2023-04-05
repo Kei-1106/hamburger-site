@@ -2,9 +2,12 @@
 @use "../../foundation/variables" as v;
 
 .c-icon {
-    border: none;
-    outline: none;
-    width: 212px;
+    background: url(/img/search01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
     height: 24px;
-    position: absolute;
+    &--focus {
+        display: none;
+    }
 }

@@ -11,7 +11,12 @@
 }
 
 .l-main {
-    margin: 20px 20px 49px 20px;
+    @include m.mq(){
+        margin: 20px 20px 49px 20px;
+    }
+    @include m.mq(tb){
+        margin: 40px;
+    }
     &-hide-contents {
         position: fixed;
         top: 0;

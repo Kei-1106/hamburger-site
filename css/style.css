@@ -346,8 +346,18 @@ button, input[type=button], a {
 }
 
 .l-footer {
-  height: 150px;
-  background-image: url(/img/footer_img-smart.jpg);
+  height: 120px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 375px) {
+  .l-footer {
+    background-image: url(/img/footer_img-smart.jpg);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-footer {
+    background-image: url(/img/footer_img-tablet.jpg);
+  }
 }
 .l-footer__inner {
   z-index: 800;
@@ -356,9 +366,6 @@ button, input[type=button], a {
 }
 .l-footer__inner--right {
   border-left: solid 2px #fff;
-}
-.l-footer__inner--bottom {
-  padding-bottom: 30px;
 }
 
 .l-header {
@@ -371,13 +378,24 @@ button, input[type=button], a {
 }
 .l-header__search {
   padding-top: 38px;
+  height: 46px;
 }
 .l-header__hamburger {
   position: absolute;
   background-color: #FFF7EF;
-  top: 14px;
-  right: 16px;
   z-index: 900;
+}
+@media screen and (max-width: 375px) {
+  .l-header__hamburger {
+    top: 14px;
+    right: 16px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-header__hamburger {
+    top: 18px;
+    right: 26px;
+  }
 }
 .l-header__hamburger span:nth-child(1) {
   display: block;
@@ -387,10 +405,19 @@ button, input[type=button], a {
   transition: all 0.15s linear;
 }
 .l-header__hamburger span:nth-child(2) {
-  font-size: 2rem;
   font-weight: bold;
   font-family: "Roboto";
   transition: all 0.15s linear;
+}
+@media screen and (max-width: 375px) {
+  .l-header__hamburger span:nth-child(2) {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-header__hamburger span:nth-child(2) {
+    font-size: 3.4rem;
+  }
 }
 .l-header__hamburger span:nth-child(3) {
   display: block;
@@ -404,8 +431,17 @@ button, input[type=button], a {
 }
 .l-header__hamburger-active span:nth-child(1) {
   display: block;
-  transform: translateY(15px) rotate(45deg);
   background-color: #707070;
+}
+@media screen and (max-width: 375px) {
+  .l-header__hamburger-active span:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-header__hamburger-active span:nth-child(1) {
+    transform: translateY(22px) rotate(45deg);
+  }
 }
 .l-header__hamburger-active span:nth-child(2) {
   opacity: 0;
@@ -413,8 +449,17 @@ button, input[type=button], a {
 }
 .l-header__hamburger-active span:nth-child(3) {
   display: block;
-  transform: translateY(-14px) rotate(-45deg);
   background-color: #707070;
+}
+@media screen and (max-width: 375px) {
+  .l-header__hamburger-active span:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-header__hamburger-active span:nth-child(3) {
+    transform: translateY(-23px) rotate(-45deg);
+  }
 }
 
 @-webkit-keyframes opa {
@@ -434,8 +479,15 @@ button, input[type=button], a {
     opacity: 0.5;
   }
 }
-.l-main {
-  margin: 20px 20px 49px 20px;
+@media screen and (max-width: 375px) {
+  .l-main {
+    margin: 20px 20px 49px 20px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-main {
+    margin: 40px;
+  }
 }
 .l-main-hide-contents {
   position: fixed;
@@ -514,14 +566,18 @@ button, input[type=button], a {
 
 .c-button__hamburger {
   border: none;
+  cursor: pointer;
 }
 
 .c-icon {
-  border: none;
-  outline: none;
-  width: 212px;
+  background: url(/img/search01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
   height: 24px;
-  position: absolute;
+}
+.c-icon--focus {
+  display: none;
 }
 
 .c-list {
@@ -540,44 +596,28 @@ button, input[type=button], a {
 }
 
 .c-search {
-  height: auto;
   border-radius: 10px;
   border: 1px solid #707070;
   font-size: 1.6rem;
   font-family: "M+1m";
 }
-@media screen and (max-width: 375px) {
-  .c-search {
-    width: 212px;
-  }
-}
-@media screen and (min-width: 376px) and (max-width: 834px) {
-  .c-search {
-    width: 384px;
-  }
-}
-.c-search--icon {
-  position: relative;
-  background: url(/img/search01.png);
-  width: 24px;
-  height: 24px;
-  z-index: 600;
-}
-.c-search--icon--focus {
-  position: relative;
-  background: none;
-  width: 24px;
-  height: 24px;
-  z-index: 900;
-}
 .c-search--button {
-  width: 78px;
   height: 46px;
   border-radius: 10px;
   border: 1px solid #707070;
   font-size: 1.6rem;
   font-family: "M+1m";
   color: #707070;
+}
+@media screen and (max-width: 375px) {
+  .c-search--button {
+    width: 78px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-search--button {
+    width: 136px;
+  }
 }
 
 .c-text {
@@ -609,9 +649,20 @@ button, input[type=button], a {
   color: #fff;
   font-size: 3rem;
 }
+.c-title--site {
+  font-size: 3.6rem;
+  color: #fff;
+}
 
-.p-access {
-  padding: 40px 40px 0 40px;
+@media screen and (max-width: 375px) {
+  .p-access {
+    padding: 40px 40px 0 40px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-access {
+    padding: 40px 29px 0 42px;
+  }
 }
 .p-access__inner--top {
   margin-top: 20px;
@@ -649,13 +700,27 @@ button, input[type=button], a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 415px;
   opacity: 0.29;
   z-index: -1;
+}
+@media screen and (max-width: 375px) {
+  .p-access__overlay {
+    height: 415px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-access__overlay {
+    height: 100%;
+  }
 }
 
 .p-card {
   padding: 11px 15px 15px 15px;
+}
+@media screen and (max-width: 375px) {
+  .p-card {
+    min-height: 616px;
+  }
 }
 .p-card--img {
   background-position: center;
@@ -680,13 +745,21 @@ button, input[type=button], a {
 }
 .p-card__inner {
   flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
 }
-.p-card__inner--middle-A {
-  gap: 283.7px;
+.p-card__inner--middle {
+  justify-content: space-between;
 }
-.p-card__inner--middle-B {
+@media screen and (max-width: 375px) {
+  .p-card__inner--middle {
+    min-height: 616px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-card__inner--middle {
+    min-height: 681px;
+  }
+}
+.p-card__inner--middle-bottom {
   gap: 20px;
 }
 .p-card__item {
@@ -697,32 +770,68 @@ button, input[type=button], a {
   display: block;
   padding-bottom: 3px;
 }
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-card__link {
+    width: 50%;
+  }
+}
 
 .p-content {
-  flex-direction: column;
-  gap: 20px;
   position: relative;
   z-index: 800;
   transition: all 0.15s linear;
+}
+@media screen and (max-width: 375px) {
+  .p-content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-content {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-content {
+    gap: 41px;
+  }
 }
 .p-content-active {
   z-index: unset;
 }
 
 .p-home {
-  width: 375px;
+  position: relative;
+  width: 100%;
   height: 285px;
 }
 .p-home__mainvisual {
-  background-image: url(/img/mainvisual-smart.jpg);
-  background-size: contain;
-  width: auto;
-  height: 100%;
+  background-size: cover;
+}
+@media screen and (max-width: 375px) {
+  .p-home__mainvisual {
+    background-image: url(/img/mainvisual-smart.jpg);
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-home__mainvisual {
+    background-image: url(/img/mainvisual-sp.jpg);
+    background-position: center;
+  }
 }
 .p-home__title {
-  padding: 121px 134px 115px 25px;
-  font-size: 3.6rem;
-  color: #fff;
+  position: absolute;
+  top: 119px;
+}
+@media screen and (max-width: 375px) {
+  .p-home__title {
+    left: 25px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-home__title {
+    left: 86px;
+  }
 }
 
 .p-search-box {
@@ -731,18 +840,37 @@ button, input[type=button], a {
   justify-content: center;
 }
 .p-search-box__inner {
-  display: flex;
+  position: relative;
   background-color: #fff;
-  margin-right: 12px;
 }
 @media screen and (max-width: 375px) {
   .p-search-box__inner {
-    padding: 11px 0 11px 16px;
+    margin-right: 12px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .p-search-box__inner {
-    padding: 11px 0 11px 12px;
+    margin-right: 14px;
+  }
+}
+.p-search-box__inner--icon {
+  z-index: 600;
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
+.p-search-box__inner--text {
+  height: 44px;
+  padding-left: 16px;
+}
+@media screen and (max-width: 375px) {
+  .p-search-box__inner--text {
+    width: 212px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-search-box__inner--text {
+    width: 378px;
   }
 }
 

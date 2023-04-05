@@ -15,9 +15,16 @@ $breakpoint: (
     }
 }
 
-//flexの設定
-@mixin flex($justify: center, $align: center){
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
+//フォントサイズの設定
+@mixin fz($size: 16){
+    font-size: ($size / 10) + rem;
+}
+//太字の設定
+@mixin bold{
+    font-weight: bold;
+}
+
+//書体の変更
+@mixin roboto{
+    font-family: "Roboto";
 }
