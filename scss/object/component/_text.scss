@@ -3,15 +3,25 @@
 
 .c-text {
     color: v.$color_white;
-    line-height: 2.3;
-    font-size: 1.4rem;
+    line-height: calc(33/14);
+    @include m.fz(14);
+    @include m.mq(pc){
+        @include m.fz(16);
+        line-height: calc(33/16);
+    }
     &--item {
-        font-size: 1.6rem;
+        @include m.fz(16);
         line-height: 1.4;
         color: v.$color_brown;
+        @include m.mq(pc){
+            line-height: calc(23/16);
+        }
+        @include m.mq(tb){
+            line-height: calc(20/14);
+        }
     }
     &--foot {
         color: v.$color_white;
-        font-size: 2rem;
+        @include m.fz(20);
     }
 }

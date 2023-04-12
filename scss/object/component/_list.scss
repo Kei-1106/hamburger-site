@@ -2,10 +2,9 @@
 @use "../../foundation/variables" as v;
 
 .c-list {
-    font-family: 'M+ 1m';
-    font-size: 2.4rem;
+    @include m.fz(24);
     &__item {
-        font-size: 2rem;
+        @include m.fz(20);
         line-height: 1.5;
     }
 }

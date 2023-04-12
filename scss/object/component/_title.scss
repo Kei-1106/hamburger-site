@@ -6,16 +6,31 @@
     @include m.roboto;
     @include m.fz(41);
     @include m.bold;
+    @include m.mq(pc){
+        @include m.fz(80);
+    }
     &--item {
         @include m.fz(22);
         color: v.$color_brown;
+        @include m.mq(tb){
+            @include m.fz(24);
+        }
+        @include m.mq(pc){
+            @include m.fz(24);
+        }
     }
     &--access {
         color: v.$color_white;
         @include m.fz(30);
+        @include m.mq(pc){
+            @include m.fz(36);
+        }
         }
     &--site {
         @include m.fz(36);
         color: v.$color_white;
+        @include m.mq(pc){
+            @include m.fz(40);
+        }
     }
 }

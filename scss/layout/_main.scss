@@ -17,6 +17,9 @@
     @include m.mq(tb){
         margin: 40px;
     }
+    @include m.mq(pc){
+        margin: 120px 112px 134px 111px;
+    }
     &-hide-contents {
         position: fixed;
         top: 0;

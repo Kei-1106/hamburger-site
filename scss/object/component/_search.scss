@@ -4,20 +4,16 @@
 .c-search {
     border-radius: 10px;
     border: v.$box_border;
-    font-size: 1.6rem;
-    font-family: "M+1m";
+    @include m.fz(16);
     &--button {
         @include m.mq(){
             width: 78px;
         }
-        @include m.mq(tb){
-            width: 136px;
-        }
+        width: 136px;
         height: 46px;
         border-radius: 10px;
         border: v.$box_border;
-        font-size: 1.6rem;
-        font-family: "M+1m";
+        @include m.fz(16);
         color: v.$color_gray;
     }
 }

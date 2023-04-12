@@ -14,17 +14,26 @@
         @include m.mq(tb){
             margin-right: 14px;
         }
+        @include m.mq(pc){
+            margin-right: 13px;
+        }
         &--icon {
             z-index: 600;
             position: absolute;
             top: 11px;
-            left: 16px;
+            left: 12px;
+            @include m.mq(){
+                left: 16px;
+            }
         }
         &--text {
             @include m.mq(){
                 width: 212px;
             }
             @include m.mq(tb){
+                width: 378px;
+            }
+            @include m.mq(pc){
                 width: 378px;
             }
             height: 44px;

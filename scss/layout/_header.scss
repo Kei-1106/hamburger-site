@@ -5,12 +5,20 @@
     position: relative;
     z-index: 800;
     padding: 40px 0;
+    @include m.mq(pc){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 67px 31px 66px 65px;
+    }
     &-active {
         z-index: unset;
     }
     &__search {
         padding-top: 38px;
-        height: 46px;
+        @include m.mq(pc){
+            padding: 0;
+        }
     }
     &__hamburger {
         position: absolute;
@@ -23,6 +31,26 @@
         @include m.mq(tb){
             top: 18px;
             right: 26px;
+        }
+        @include m.mq(pc){
+            display: none;
+        }
+        &--pc{
+            @include m.mq(pc){
+                position: absolute;
+                z-index: 900;
+                top: 82px;    
+                left: 46px;
+                @include m.fz(34);
+                @include m.bold;
+                @include m.roboto;
+            }
+            @include m.mq(tb){
+                display: none;
+            }
+            @include m.mq(){
+                display: none;
+            }
         }
         & span:nth-child(1) {
             display: block;

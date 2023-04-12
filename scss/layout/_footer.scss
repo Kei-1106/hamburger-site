@@ -10,6 +10,12 @@
     @include m.mq(tb){
         background-image: url(/img/footer_img-tablet.jpg);
     }
+    @include m.mq(pc){
+        background-image: url(/img/footer_img-pc.jpg);
+        position: absolute;
+        width: 100%;
+        z-index: 800;
+    }
     &__inner {
         z-index: 800;
         padding: 39px 0 34px 0;

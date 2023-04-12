@@ -2,7 +2,10 @@
 @use "../../foundation/variables" as v;
 
 .c-logo {
-    font-family: "Roboto";
-    font-size: 4rem;
-    font-weight: bold;
+    @include m.roboto;
+    @include m.fz(40);
+    @include m.bold;
+    @include m.mq(pc){
+        @include m.fz(64);
+    }
 }

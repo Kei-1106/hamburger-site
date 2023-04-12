@@ -2,8 +2,11 @@
 @use "../../foundation/variables" as v;
 .p-card {
     padding: 11px 15px 15px 15px;
-    @include m.mq(){
-        min-height: 616px;
+    @include m.mq(tb){
+        padding: 12px 15px 15px 16px;
+    }
+    @include m.mq(pc){
+        padding: 20px;
     }
     &--img {
         background-position: center;
@@ -19,6 +22,9 @@
         &--bottom {
             display: block;
             margin-bottom: 15.3px;
+            @include m.mq(pc){
+                margin-bottom: 34.5px;
+            }
         }
         &::after {
             content: "";
@@ -26,6 +32,9 @@
             height: 4px;
             background-color: #fff;
             display: block;
+            @include m.mq(pc){
+                width: 63px;
+            }
         }
     }
     &__inner {
@@ -35,24 +44,42 @@
                 min-height: 616px;
             }
             @include m.mq(tb){
-                min-height: 681px;
+                min-height: 654px;
+            }
+            @include m.mq(pc){
+                min-height: 1167px;
             }
             justify-content: space-between;
             &-bottom {
                 gap: 20px;
+                @include m.mq(tb){
+                    gap: 15px;
+                }
             }
         }
     }
     &__item {
         padding: 7px 10px 15px 10px;
         opacity: 0.8;
+        @include m.mq(pc){
+            padding: 12px 21px 20px 20px;
+        }
+        @include m.mq(tb){
+            padding: 7px 15px 15px 15px;
+        }
         &--bottom {
             display: block;
             padding-bottom: 3px;
+            @include m.mq(pc){
+                padding-bottom: 9px;
+            }
         }
     }
     &__link {
         @include m.mq(tb){
+            width: 50%;
+        }
+        @include m.mq(pc){
             width: 50%;
         }
     }

@@ -3,6 +3,11 @@
 
 .l-sidebar {
     width: 328px;
+    @include m.mq(tb){
+        width: 367px;
+    }@include m.mq(pc){
+        width: 367px;
+    }
     &__inner {
         padding-top: 212px;
     }
@@ -22,6 +27,9 @@
     @include m.mq(tb){
         right: -367px;
     }
+    @include m.mq(pc){
+        position: static;
+    }
     &-active {
         @include m.mq(){
             transform: translateX(-328px);
@@ -35,6 +43,9 @@
         margin-top: 22px;
     }
     &__list {
-        padding: 40px 0 43px 70px;
+        padding: 40px 0 34px 66px;
+        @include m.mq(pc){
+            padding: 36px 0 49px 66px;
+        }
     }
 }

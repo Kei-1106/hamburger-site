@@ -8,6 +8,9 @@
     @include m.mq(tb){
         width: 834px;
     }
+    @include m.mq(pc){
+        width: 100%;
+    }
     &__flex {
         display: flex;
     }
