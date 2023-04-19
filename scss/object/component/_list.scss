@@ -3,8 +3,14 @@
 
 .c-list {
     @include m.fz(24);
+    @include m.mq(pc){
+        @include m.font-vw(24, 1920);
+    }
     &__item {
         @include m.fz(20);
         line-height: 1.5;
+        @include m.mq(pc){
+            @include m.font-vw(20, 1920);
+        }
     }
 }

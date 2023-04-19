@@ -41,7 +41,7 @@
                 z-index: 900;
                 top: 82px;    
                 left: 46px;
-                @include m.fz(34);
+                @include m.font-vw(34, 1920);
                 @include m.bold;
                 @include m.roboto;
             }

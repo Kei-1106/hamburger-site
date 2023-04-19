@@ -5,9 +5,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include m.mq(pc){
+        justify-content: flex-end;
+        max-width: 545px;
+        width: 100%;
+    }
     &__inner {
         position: relative;
         background-color: #fff;
+        border-radius: 10px;
         @include m.mq(){
             margin-right: 12px;
         }
@@ -16,6 +22,8 @@
         }
         @include m.mq(pc){
             margin-right: 13px;
+            max-width: 378px;
+            width: 100%;
         }
         &--icon {
             z-index: 600;
@@ -28,16 +36,17 @@
         }
         &--text {
             @include m.mq(){
-                width: 212px;
+                width: 100%;
             }
             @include m.mq(tb){
                 width: 378px;
             }
             @include m.mq(pc){
-                width: 378px;
+                width: 100%;
             }
-            height: 44px;
+            height: 46px;
             padding-left: 16px;
+            box-sizing: border-box;
         }   
     }
 }

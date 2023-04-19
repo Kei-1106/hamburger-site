@@ -13,5 +13,15 @@
     }
     &__flex {
         display: flex;
+        &--center {
+            @include m.mq(pc){
+                flex: 1;
+            }
+        }
+        &--right {
+            @include m.mq(pc){
+                flex: 2;
+            }
+        }
     }
 }

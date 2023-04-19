@@ -428,7 +428,7 @@ button, input[type=button], a {
     z-index: 900;
     top: 82px;
     left: 46px;
-    font-size: 3.4rem;
+    font-size: 1.7708333333vw;
     font-weight: bold;
     font-family: "Roboto";
   }
@@ -457,12 +457,12 @@ button, input[type=button], a {
 }
 @media screen and (max-width: 375px) {
   .l-header__hamburger span:nth-child(2) {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .l-header__hamburger span:nth-child(2) {
-    font-size: 3.4rem;
+    font-size: 34px;
   }
 }
 .l-header__hamburger span:nth-child(3) {
@@ -652,35 +652,45 @@ button, input[type=button], a {
 }
 
 .c-list {
-  font-size: 2.4rem;
+  font-size: 24px;
+}
+@media screen and (min-width: 835px) {
+  .c-list {
+    font-size: 1.25vw;
+  }
 }
 .c-list__item {
-  font-size: 2rem;
+  font-size: 20px;
   line-height: 1.5;
+}
+@media screen and (min-width: 835px) {
+  .c-list__item {
+    font-size: 1.0416666667vw;
+  }
 }
 
 .c-logo {
   font-family: "Roboto";
-  font-size: 4rem;
+  font-size: 40px;
   font-weight: bold;
 }
 @media screen and (min-width: 835px) {
   .c-logo {
-    font-size: 6.4rem;
+    font-size: 64px;
   }
 }
 
 .c-search {
   border-radius: 10px;
   border: 1px solid #707070;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 .c-search--button {
   width: 136px;
   height: 46px;
   border-radius: 10px;
   border: 1px solid #707070;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #707070;
 }
 @media screen and (max-width: 375px) {
@@ -692,16 +702,16 @@ button, input[type=button], a {
 .c-text {
   color: #fff;
   line-height: 2.3571428571;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 @media screen and (min-width: 835px) {
   .c-text {
-    font-size: 1.6rem;
+    font-size: 16px;
     line-height: 2.0625;
   }
 }
 .c-text--item {
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.4;
   color: #3C2A10;
 }
@@ -717,50 +727,50 @@ button, input[type=button], a {
 }
 .c-text--foot {
   color: #fff;
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .c-title {
   color: #eaeaea;
   font-family: "Roboto";
-  font-size: 4.1rem;
+  font-size: 41px;
   font-weight: bold;
 }
 @media screen and (min-width: 835px) {
   .c-title {
-    font-size: 8rem;
+    font-size: 4.1666666667vw;
   }
 }
 .c-title--item {
-  font-size: 2.2rem;
+  font-size: 22px;
   color: #3C2A10;
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-title--item {
-    font-size: 2.4rem;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 835px) {
   .c-title--item {
-    font-size: 2.4rem;
+    font-size: 24px;
   }
 }
 .c-title--access {
   color: #fff;
-  font-size: 3rem;
+  font-size: 30px;
 }
 @media screen and (min-width: 835px) {
   .c-title--access {
-    font-size: 3.6rem;
+    font-size: 36px;
   }
 }
 .c-title--site {
-  font-size: 3.6rem;
+  font-size: 36px;
   color: #fff;
 }
 @media screen and (min-width: 835px) {
   .c-title--site {
-    font-size: 4rem;
+    font-size: 40px;
   }
 }
 
@@ -803,14 +813,14 @@ button, input[type=button], a {
   display: block;
 }
 .p-access__map {
-  padding-bottom: 51px;
+  padding-bottom: 40px;
   height: 100%;
   position: relative;
   z-index: -5;
 }
 @media screen and (min-width: 835px) {
   .p-access__map {
-    padding-bottom: 40px;
+    padding-bottom: 83px;
   }
 }
 .p-access__map iframe {
@@ -1056,9 +1066,17 @@ button, input[type=button], a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 835px) {
+  .p-search-box {
+    justify-content: flex-end;
+    max-width: 545px;
+    width: 100%;
+  }
+}
 .p-search-box__inner {
   position: relative;
   background-color: #fff;
+  border-radius: 10px;
 }
 @media screen and (max-width: 375px) {
   .p-search-box__inner {
@@ -1073,6 +1091,8 @@ button, input[type=button], a {
 @media screen and (min-width: 835px) {
   .p-search-box__inner {
     margin-right: 13px;
+    max-width: 378px;
+    width: 100%;
   }
 }
 .p-search-box__inner--icon {
@@ -1087,12 +1107,13 @@ button, input[type=button], a {
   }
 }
 .p-search-box__inner--text {
-  height: 44px;
+  height: 46px;
   padding-left: 16px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 375px) {
   .p-search-box__inner--text {
-    width: 212px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
@@ -1102,7 +1123,7 @@ button, input[type=button], a {
 }
 @media screen and (min-width: 835px) {
   .p-search-box__inner--text {
-    width: 378px;
+    width: 100%;
   }
 }
 
@@ -1127,6 +1148,16 @@ button, input[type=button], a {
 }
 .u-display__flex {
   display: flex;
+}
+@media screen and (min-width: 835px) {
+  .u-display__flex--center {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 835px) {
+  .u-display__flex--right {
+    flex: 2;
+  }
 }
 
 .u-position {
