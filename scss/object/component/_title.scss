@@ -32,5 +32,14 @@
         @include m.mq(pc){
             @include m.fz(40);
         }
+        &-top {
+            @include m.fz(36);
+            @include m.roboto;
+            color: v.$color_white;
+        }
+        &-bottom {
+            @include m.fz(16);
+            color: v.$color_white;
+        }
     }
 }

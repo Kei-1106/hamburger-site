@@ -32,6 +32,7 @@
 /* Project ------------ */
 
 @forward "object/project/access";
+@forward "object/project/archive";
 @forward "object/project/articles";
 @forward "object/project/card";
 @forward "object/project/content";
@@ -43,3 +44,4 @@
 @forward "object/utility/align";
 @forward "object/utility/display";
 @forward "object/utility/position";
+@forward "object/utility/text";

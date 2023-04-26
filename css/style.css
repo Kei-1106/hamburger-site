@@ -554,6 +554,11 @@ button, input[type=button], a {
           animation: opa 1s ease 0s both;
   background-color: #000;
 }
+@media screen and (max-width: 375px) {
+  .l-main--archive {
+    margin: 30px;
+  }
+}
 
 .l-sidebar {
   width: 328px;
@@ -773,6 +778,15 @@ button, input[type=button], a {
     font-size: 40px;
   }
 }
+.c-title--site-top {
+  font-size: 36px;
+  font-family: "Roboto";
+  color: #fff;
+}
+.c-title--site-bottom {
+  font-size: 16px;
+  color: #fff;
+}
 
 @media screen and (max-width: 375px) {
   .p-access {
@@ -870,6 +884,43 @@ button, input[type=button], a {
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .p-access__overlay--pc {
     width: auto;
+  }
+}
+
+.p-archive {
+  position: relative;
+  width: 100%;
+  height: 283px;
+}
+.p-archive__inner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+@media screen and (max-width: 375px) {
+  .p-archive__mainvisual {
+    background-image: url(/img/page-title_arcive.jpg);
+  }
+}
+.p-archive__title--top {
+  position: absolute;
+  top: 104px;
+}
+@media screen and (max-width: 375px) {
+  .p-archive__title--top {
+    left: 37px;
+  }
+}
+.p-archive__title--bottom {
+  position: absolute;
+  top: 159px;
+}
+@media screen and (max-width: 375px) {
+  .p-archive__title--bottom {
+    left: 37px;
   }
 }
 
@@ -1014,6 +1065,19 @@ button, input[type=button], a {
   width: 100%;
   height: 285px;
 }
+.p-home--archive {
+  position: relative;
+  width: 100%;
+  height: 283px;
+}
+.p-home--archive-sub {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
 @media screen and (min-width: 835px) {
   .p-home {
     height: 530px;
@@ -1021,7 +1085,6 @@ button, input[type=button], a {
 }
 .p-home__mainvisual {
   background-size: cover;
-  background-color: #000;
 }
 @media screen and (max-width: 375px) {
   .p-home__mainvisual {
@@ -1038,6 +1101,11 @@ button, input[type=button], a {
   .p-home__mainvisual {
     background-image: url(/img/mainvisual-sp.jpg);
     background-position: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .p-home__mainvisual--archive {
+    background-image: url(/img/page-title_arcive.jpg);
   }
 }
 .p-home__title {
@@ -1058,6 +1126,24 @@ button, input[type=button], a {
   .p-home__title {
     top: 231px;
     left: 86px;
+  }
+}
+.p-home__title--top {
+  position: absolute;
+  top: 104px;
+}
+@media screen and (max-width: 375px) {
+  .p-home__title--top {
+    left: 37px;
+  }
+}
+.p-home__title--bottom {
+  position: absolute;
+  top: 159px;
+}
+@media screen and (max-width: 375px) {
+  .p-home__title--bottom {
+    left: 37px;
   }
 }
 
@@ -1162,6 +1248,10 @@ button, input[type=button], a {
 
 .u-position {
   position: relative;
+}
+
+.u-text--bold {
+  font-weight: bold;
 }
 
 /** 

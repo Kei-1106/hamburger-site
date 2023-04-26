@@ -1,0 +1,37 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-archive {
+    position: relative;
+    width: 100%;
+    height: 283px;
+    &__inner {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0.5;
+    }
+    &__mainvisual {
+        @include m.mq(){
+            background-image: url(/img/page-title_arcive.jpg);
+        }
+    }
+    &__title {
+        &--top {
+            position: absolute;
+            top: 104px;
+            @include m.mq(){
+                left: 37px;
+            }
+        }
+        &--bottom {
+            position: absolute;
+            top: 159px;
+            @include m.mq(){
+                left: 37px;
+            }
+        }
+    }
+}

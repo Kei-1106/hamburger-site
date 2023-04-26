@@ -1,6 +1,8 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/variables" as v;
 
-.u-position {
-    position: relative;
+.u-text {
+    &--bold {
+        @include m.bold;
+    }
 }
