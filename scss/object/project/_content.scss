@@ -5,15 +5,6 @@
     @include m.mq(){
         flex-direction: column;
     }
-    @include m.mq(){
-        gap: 20px;
-    }
-    @include m.mq(tb){
-        gap: 41px;
-    }
-    @include m.mq(pc){
-        gap: 80px;
-    }
     position: relative;
     z-index: 800;
     transition: all .15s linear;

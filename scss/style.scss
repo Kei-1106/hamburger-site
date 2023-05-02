@@ -13,6 +13,7 @@
 @forward "layout/header";
 @forward "layout/main";
 @forward "layout/sidebar";
+@forward "layout/wrapper";
 
 /** 
 * Object
@@ -33,7 +34,7 @@
 
 @forward "object/project/access";
 @forward "object/project/archive";
-@forward "object/project/articles";
+@forward "object/project/article";
 @forward "object/project/card";
 @forward "object/project/content";
 @forward "object/project/home";
@@ -43,5 +44,6 @@
 
 @forward "object/utility/align";
 @forward "object/utility/display";
+@forward "object/utility/font";
+@forward "object/utility/gap";
 @forward "object/utility/position";
-@forward "object/utility/text";

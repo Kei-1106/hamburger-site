@@ -1,0 +1,25 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.u-gap {
+    @include m.mq(){
+        gap: 20px;
+    }
+    @include m.mq(tb){
+        gap: 41px;
+    }
+    @include m.mq(pc){
+        gap: 80px;
+    }
+    &--sub {
+        @include m.mq(){
+            gap: 20.9px;
+        }
+        @include m.mq(tb){
+            gap: 20.5px;
+        }
+        @include m.mq(pc){
+            gap: 30px;
+        }
+    }
+}

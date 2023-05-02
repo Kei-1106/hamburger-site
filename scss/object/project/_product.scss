@@ -1,8 +1,8 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/variables" as v;
 
-.u-text {
-    &--bold {
-        @include m.bold;
+.product {
+    &__img {
+        background-image: url(/img/food-search.jpg);
     }
 }

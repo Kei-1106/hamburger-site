@@ -32,12 +32,12 @@
     }
     &-active {
         @include m.mq(){
-            transform: translateX(-328px);
-        }
+            transform: translateX(-375px);
+            }
         @include m.mq(tb){
             transform: translateX(-367px);
+            }
         }
-    }
     }
     &__item {
         margin-top: 22px;

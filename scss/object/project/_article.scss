@@ -1,0 +1,12 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-article {
+    &__heading {
+        margin-bottom: 19px;
+        padding-left: 2px;
+        &--top {
+            margin-bottom: 30px;
+        }
+    }
+}

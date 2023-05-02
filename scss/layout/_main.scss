@@ -33,9 +33,4 @@
             background-color: v.$color_black;
         }
     }
-    &--archive {
-        @include m.mq(){
-            margin: 30px ;
-        }
-    }
 }

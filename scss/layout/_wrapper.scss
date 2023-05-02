@@ -1,0 +1,8 @@
+@use "../foundation/mixin" as m;
+@use "../foundation/variables" as v;
+
+.l-wrapper {
+    @include m.mq(){
+        margin: 30px 18px 60.4px 20px
+    }
+}
