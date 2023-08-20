@@ -1,0 +1,12 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-group {
+    display: flex;
+    @include m.mq(tb){
+        flex-direction: column;
+    }
+    @include m.mq(pc){
+        flex-direction: column;
+    }
+}

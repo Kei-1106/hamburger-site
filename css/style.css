@@ -322,6 +322,7 @@ html {
 body {
   font-family: "M+ 1m", Meiryo, "Roboto", Roboto, "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Osaka, sans-serif;
   background-color: #fffdfa;
+  overflow-x: hidden;
 }
 
 img {
@@ -622,7 +623,17 @@ button, input[type=button], a {
 
 @media screen and (max-width: 375px) {
   .l-wrapper {
-    margin: 30px 18px 60.4px 20px;
+    margin: 30px 18px 31px 20px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .l-wrapper {
+    margin: 36px 35px 30px 42px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .l-wrapper {
+    margin: 60px 100px 64px 100px;
   }
 }
 
@@ -641,7 +652,26 @@ button, input[type=button], a {
 .c-background-color__gray {
   background-color: #707070;
 }
+.c-background-color__brown {
+  background-color: #3C2A10;
+}
 
+.c-button {
+  border-radius: 100vh;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  width: 163.16px;
+  height: 42.47px;
+  background-color: #fff;
+  border: 1px solid #707070;
+}
+@media screen and (min-width: 835px) {
+  .c-button {
+    width: 292px;
+    height: 76px;
+  }
+}
 .c-button__hamburger {
   border: none;
   cursor: pointer;
@@ -656,6 +686,32 @@ button, input[type=button], a {
 }
 .c-icon--focus {
   display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .c-img--item {
+    width: 100%;
+    height: 230.53px;
+    background-image: url(/img/food-search.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-img--item {
+    width: 100%;
+    min-width: 378.28px;
+    background-image: url(/img/food-search-tb.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-img--item {
+    width: 100%;
+    min-width: 677px;
+    min-height: 471px;
+    background-image: url(/img/food-search-pc.jpg);
+    background-size: cover;
+  }
 }
 
 .c-list {
@@ -719,20 +775,70 @@ button, input[type=button], a {
 }
 .c-text--item {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.4375;
   color: #3C2A10;
-}
-@media screen and (min-width: 835px) {
-  .c-text--item {
-    line-height: 1.4375;
-  }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-text--item {
     line-height: 1.4285714286;
   }
 }
-.c-text--foot {
+.c-text--top {
+  color: #fff;
+  font-size: 5.3333333333vw;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-text--top {
+    font-size: 2.3980815348vw;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-text--top {
+    font-size: 1.875vw;
+  }
+}
+.c-text--medium {
+  color: #fff;
+  font-size: 4.2666666667vw;
+  font-weight: bold;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-text--medium {
+    font-size: 1.9184652278vw;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-text--medium {
+    font-size: 1.25vw;
+  }
+}
+.c-text--small {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4375;
+}
+.c-text--small-gray {
+  color: #707070;
+  font-size: 16px;
+}
+.c-text--number {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.c-text--number-list {
+  padding: 7px 13px;
+  border: 1px solid #707070;
+  transition: color 0.25s, background-color 0.25s;
+}
+.c-text--number-list:hover {
+  color: #fff;
+  background-color: #3C2B1C;
+}
+.c-text--number-current {
+  color: #fff;
+  background-color: #3C2B1C;
+}
+.c-text--bottom {
   color: #fff;
   font-size: 20px;
 }
@@ -752,6 +858,16 @@ button, input[type=button], a {
   color: #3C2A10;
   font-size: 7.486631016vw;
   font-weight: bold;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-title--small {
+    font-size: 4.3165467626vw;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-title--small {
+    font-size: 1.875vw;
+  }
 }
 .c-title--item {
   font-size: 22px;
@@ -783,6 +899,24 @@ button, input[type=button], a {
 @media screen and (min-width: 835px) {
   .c-title--site {
     font-size: 40px;
+  }
+}
+.c-title--site-sub {
+  color: #fff;
+}
+@media screen and (max-width: 375px) {
+  .c-title--site-sub {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-title--site-sub {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-title--site-sub {
+    font-size: 60px;
   }
 }
 .c-title--site-bottom {
@@ -894,6 +1028,11 @@ button, input[type=button], a {
   width: 100%;
   height: 283px;
 }
+@media screen and (min-width: 835px) {
+  .p-archive {
+    height: 239px;
+  }
+}
 .p-archive__inner {
   position: absolute;
   width: 100%;
@@ -902,27 +1041,49 @@ button, input[type=button], a {
   bottom: 0;
   opacity: 0.5;
 }
-@media screen and (max-width: 375px) {
+.p-archive__mainvisual {
+  background-image: url(/img/page-title_arcive.jpg);
+}
+@media screen and (min-width: 835px) {
   .p-archive__mainvisual {
-    background-image: url(/img/page-title_arcive.jpg);
+    background-image: url(/img/home_take-out_.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }
-.p-archive__title--top {
+.p-archive__title {
   position: absolute;
-  top: 104px;
+  top: 102px;
+  left: 37px;
 }
-@media screen and (max-width: 375px) {
-  .p-archive__title--top {
-    left: 37px;
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-archive__title {
+    display: flex;
+    align-items: center;
+    left: 86px;
   }
 }
-.p-archive__title--bottom {
-  position: absolute;
-  top: 159px;
+@media screen and (min-width: 835px) {
+  .p-archive__title {
+    display: flex;
+    align-items: center;
+    top: 80px;
+    left: 86px;
+  }
 }
 @media screen and (max-width: 375px) {
   .p-archive__title--bottom {
-    left: 37px;
+    padding-top: 7px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-archive__title--bottom {
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-archive__title--bottom {
+    padding-left: 20px;
   }
 }
 .p-archive__heading {
@@ -933,12 +1094,29 @@ button, input[type=button], a {
   margin-bottom: 30px;
 }
 
-.p-article__heading {
-  margin-bottom: 19px;
-  padding-left: 2px;
+@media screen and (max-width: 375px) {
+  .p-article__heading {
+    padding-left: 2px;
+    margin-bottom: 19px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-article__heading {
+    margin-bottom: 37px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-article__heading {
+    margin-bottom: 70px;
+  }
 }
 .p-article__heading--top {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 375px) {
+  .p-article__heading--top {
+    margin-bottom: 30px;
+  }
 }
 
 .p-card {
@@ -1053,13 +1231,95 @@ button, input[type=button], a {
   z-index: 800;
   transition: all 0.15s linear;
 }
-@media screen and (max-width: 375px) {
-  .p-content {
+.p-content-active {
+  z-index: unset;
+}
+.p-content__inner {
+  padding-top: 30.5px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-content__inner {
+    padding-top: 29px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-content__inner {
+    padding-top: 53px;
+  }
+}
+.p-content__inner--top {
+  margin-left: 17px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-content__inner--top {
+    margin-left: 34.7px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-content__inner--top {
+    margin-left: 63px;
+    padding-bottom: 47px;
+  }
+}
+.p-content__inner--medium {
+  margin-left: 17px;
+  margin-right: 73.1px;
+  padding: 10px 0 40px 0;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-content__inner--medium {
+    margin-left: 34.7px;
+    margin-right: 59px;
+    padding: 10px 0 45px 0;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-content__inner--medium {
+    margin-left: 63px;
+    margin-right: 104px;
+    padding: 17px 0 60px 0;
+  }
+}
+.p-content__inner--bottom {
+  margin: 0 auto 43.7px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-content__inner--bottom {
+    margin: 0 auto 40px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-content__inner--bottom {
+    margin: 0 auto 60px;
+  }
+}
+.p-content__inner--small {
+  margin-left: 17px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-content__inner--small {
+    margin-left: 34.7px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-content__inner--small {
+    margin-left: 63px;
+  }
+}
+
+.p-group {
+  display: flex;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-group {
     flex-direction: column;
   }
 }
-.p-content-active {
-  z-index: unset;
+@media screen and (min-width: 835px) {
+  .p-group {
+    flex-direction: column;
+  }
 }
 
 .p-home {
@@ -1116,6 +1376,56 @@ button, input[type=button], a {
     top: 231px;
     left: 86px;
   }
+}
+
+.p-pagination {
+  margin-top: 60.9px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-pagination {
+    margin-top: 105.5px;
+  }
+}
+.p-pagination__inner {
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 375px) {
+  .p-pagination__inner {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-pagination__inner--text {
+    display: none;
+  }
+}
+@media screen and (min-width: 835px) {
+  .p-pagination__inner--text {
+    display: none;
+  }
+}
+.p-pagination__inner--left {
+  margin-right: 19.3px;
+}
+@media screen and (max-width: 375px) {
+  .p-pagination__inner--left {
+    display: none;
+  }
+}
+.p-pagination__inner--center {
+  display: flex;
+  margin: 0 17.2px;
+  gap: 15px;
+}
+@media screen and (max-width: 375px) {
+  .p-pagination__inner--center {
+    display: none;
+  }
+}
+
+.product__img {
+  background-image: url(/img/food-search.jpg);
 }
 
 .p-search-box {
@@ -1204,6 +1514,11 @@ button, input[type=button], a {
     flex: 2;
   }
 }
+@media screen and (max-width: 375px) {
+  .u-display__column {
+    flex-direction: column;
+  }
+}
 
 .u-font--bold {
   font-weight: bold;
@@ -1240,6 +1555,12 @@ button, input[type=button], a {
 @media screen and (min-width: 835px) {
   .u-gap--sub {
     gap: 30px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .u-padding--left {
+    padding-left: 1px;
   }
 }
 

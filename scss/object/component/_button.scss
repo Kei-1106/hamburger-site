@@ -2,6 +2,18 @@
 @use "../../foundation/variables" as v;
 
 .c-button {
+    border-radius: 100vh;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    width: 163.16px;
+    height: 42.47px;
+    background-color: v.$color_white;
+    border: v.$box_border;
+    @include m.mq(pc){
+        width: 292px;
+        height: 76px;
+    }
     &__hamburger {
         border: none;
         cursor: pointer;

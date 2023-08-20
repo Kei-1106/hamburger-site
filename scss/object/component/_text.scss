@@ -11,16 +11,60 @@
     }
     &--item {
         @include m.fz(16);
-        line-height: 1.4;
+        line-height: calc(23/16);
         color: v.$color_brown;
-        @include m.mq(pc){
-            line-height: calc(23/16);
-        }
         @include m.mq(tb){
             line-height: calc(20/14);
         }
     }
-    &--foot {
+    &--top {
+        color: v.$color_white;
+        @include m.font-vw(20, 375);
+        @include m.mq(tb){
+            @include m.font-vw(20, 834);
+        }
+        @include m.mq(pc){
+            @include m.font-vw(36, 1920);
+        }
+    }
+    &--medium {
+        color: v.$color_white;
+        @include m.font-vw(16, 375);
+        font-weight: bold;
+        @include m.mq(tb){
+            @include m.font-vw(16, 834);
+        }
+        @include m.mq(pc){
+            @include m.font-vw(24, 1920);
+        }
+    }
+    &--small {
+        color: v.$color_white;
+        @include m.fz(16);
+        line-height: calc(23/16);
+        &-gray {
+            color: v.$color_gray;
+            @include m.fz(16);
+        }
+    }
+    &--number {
+        font-family: "Roboto";
+        font-weight: bold;
+        &-list {
+            padding: 7px 13px;
+            border: v.$box_border;
+            transition: color 0.25s , background-color 0.25s;
+            &:hover {
+                color: v.$color_white;
+                background-color: v.$color_brown-dark;
+            }    
+        }
+        &-current {
+            color: v.$color_white;
+            background-color: v.$color_brown-dark;
+        }
+    }
+    &--bottom {
         color: v.$color_white;
         @include m.fz(20);
     }

@@ -1,0 +1,38 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-pagination {
+    margin-top: 60.9px;
+    @include m.mq(tb){
+        margin-top: 105.5px;
+    }
+    &__inner {
+        align-items: center;
+        justify-content: center;
+        @include m.mq(){
+            justify-content: space-between;
+        }
+        &--text {
+            @include m.mq(tb){
+                display: none;
+            }
+            @include m.mq(pc){
+                display: none;
+            }
+        }
+        &--left {
+            @include m.mq(){
+                display: none;
+            }
+            margin-right: 19.3px;
+        }
+        &--center {
+            @include m.mq(){
+                display: none;
+            }
+            display: flex;
+            margin: 0 17.2px;
+            gap: 15px;
+        }
+    }
+}

@@ -2,13 +2,63 @@
 @use "../../foundation/variables" as v;
 
 .p-content {
-    @include m.mq(){
-        flex-direction: column;
-    }
     position: relative;
     z-index: 800;
     transition: all .15s linear;
     &-active {
         z-index: unset;
+    }
+    &__inner {
+        padding-top: 30.5px;
+        @include m.mq(tb){
+            padding-top: 29px;
+        }
+        @include m.mq(pc){
+            padding-top: 53px;
+        }
+        &--top {
+            margin-left: 17px;
+            padding-bottom: 24px;
+            @include m.mq(tb){
+                margin-left: 34.7px;
+            }
+            @include m.mq(pc){
+                margin-left: 63px;
+                padding-bottom: 47px;
+            }
+        }
+        &--medium {
+            margin-left: 17px;
+            margin-right: 73.1px;
+            padding: 10px 0 40px 0;
+            @include m.mq(tb){
+                margin-left: 34.7px;
+                margin-right: 59px;
+                padding: 10px 0 45px 0;
+            }
+            @include m.mq(pc){
+                margin-left: 63px;
+                margin-right: 104px;
+                padding: 17px 0 60px 0;
+            }
+        }
+        &--bottom {
+            margin: 0 auto 43.7px;
+            @include m.mq(tb){
+                margin: 0 auto 40px;
+            }
+            @include m.mq(pc){
+                margin: 0 auto 60px;
+            }
+        }
+        &--small {
+            margin-left: 17px;
+            @include m.mq(tb){
+                margin-left: 34.7px;
+            }
+            @include m.mq(pc){
+                margin-left: 63px;
+            }
+        }
     }
 }

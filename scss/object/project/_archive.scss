@@ -5,6 +5,9 @@
     position: relative;
     width: 100%;
     height: 283px;
+    @include m.mq(pc){
+        height: 239px;
+    }
     &__inner {
         position: absolute;
         width: 100%;
@@ -14,23 +17,37 @@
         opacity: 0.5;
     }
     &__mainvisual {
-        @include m.mq(){
-            background-image: url(/img/page-title_arcive.jpg);
+        background-image: url(/img/page-title_arcive.jpg);
+        @include m.mq(pc){
+            background-image: url(/img/home_take-out_.jpg);
+            background-size: cover;
+            background-position: center;
         }
     }
     &__title {
-        &--top {
-            position: absolute;
-            top: 104px;
-            @include m.mq(){
-                left: 37px;
-            }
+        position: absolute;
+        top: 102px;
+        left: 37px;
+        @include m.mq(tb){
+            display: flex;
+            align-items: center;
+            left: 86px;
+        }
+        @include m.mq(pc){
+            display: flex;
+            align-items: center;
+            top: 80px;
+            left: 86px;
         }
         &--bottom {
-            position: absolute;
-            top: 159px;
-            @include m.mq(){
-                left: 37px;
+            @include m.mq(sm){
+                padding-top: 7px;
+            }
+            @include m.mq(tb){
+                padding-left: 20px;
+            }
+            @include m.mq(pc){
+                padding-left: 20px;
             }
         }
     }

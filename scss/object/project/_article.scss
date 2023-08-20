@@ -3,10 +3,21 @@
 
 .p-article {
     &__heading {
-        margin-bottom: 19px;
-        padding-left: 2px;
+        @include m.mq(){
+            padding-left: 2px;
+            margin-bottom: 19px;
+        }
+        @include m.mq(tb){
+            margin-bottom: 37px;
+        }
+        @include m.mq(pc){
+            margin-bottom: 70px;
+        }
         &--top {
+            margin-bottom: 25px;
+            @include m.mq(){
             margin-bottom: 30px;
+            }
         }
     }
 }

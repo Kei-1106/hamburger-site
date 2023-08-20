@@ -12,7 +12,13 @@
     &--small {
         color: v.$color_brown;
         @include m.font-vw(28, 374);
-        @include m.bold;    
+        @include m.bold; 
+        @include m.mq(tb){
+            @include m.font-vw(36, 834);
+        }
+        @include m.mq(pc){
+            @include m.font-vw(36, 1920);
+        }
     }
     &--item {
         @include m.fz(22);
@@ -36,6 +42,18 @@
         color: v.$color_white;
         @include m.mq(pc){
             @include m.fz(40);
+        }
+        &-sub {
+            color: v.$color_white;
+            @include m.mq{
+                @include m.fz(36);
+            }
+            @include m.mq(tb){
+                @include m.fz(60);
+            }
+            @include m.mq(pc){
+                @include m.fz(60);
+            }
         }
         &-bottom {
             @include m.fz(16);

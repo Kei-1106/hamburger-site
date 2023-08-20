@@ -24,4 +24,9 @@
             }
         }
     }
+    &__column {
+        @include m.mq(){
+            flex-direction: column;
+        }
+    }
 }

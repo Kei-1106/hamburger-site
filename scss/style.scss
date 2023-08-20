@@ -24,6 +24,7 @@
 @forward "object/component/background-color";
 @forward "object/component/button";
 @forward "object/component/icon";
+@forward "object/component/img";
 @forward "object/component/list";
 @forward "object/component/logo";
 @forward "object/component/search";
@@ -37,7 +38,10 @@
 @forward "object/project/article";
 @forward "object/project/card";
 @forward "object/project/content";
+@forward "object/project/group";
 @forward "object/project/home";
+@forward "object/project/pagination";
+@forward "object/project/product";
 @forward "object/project/search-box";
 
 /* Utility ------------ */
@@ -46,4 +50,5 @@
 @forward "object/utility/display";
 @forward "object/utility/font";
 @forward "object/utility/gap";
+@forward "object/utility/padding";
 @forward "object/utility/position";
