@@ -29,4 +29,15 @@
             flex-direction: column;
         }
     }
+    &__reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    &__center {
+        display: flex;
+        justify-content: center;
+    }
+    &__wrap {
+        flex-wrap: wrap;
+    }
 }

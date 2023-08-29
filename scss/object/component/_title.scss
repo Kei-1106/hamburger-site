@@ -19,6 +19,16 @@
         @include m.mq(pc){
             @include m.font-vw(36, 1920);
         }
+        &-sub {
+            color: v.$color_brown;
+            @include m.font-vw(24, 374);
+            @include m.bold;
+        }
+    } 
+    &--tiny {
+        color: v.$color_brown;
+        @include m.font-vw(20, 374);
+        @include m.bold;
     }
     &--item {
         @include m.fz(22);

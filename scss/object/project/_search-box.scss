@@ -16,6 +16,7 @@
         border-radius: 10px;
         @include m.mq(){
             margin-right: 12px;
+            min-width: 230px;
         }
         @include m.mq(tb){
             margin-right: 14px;

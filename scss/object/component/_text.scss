@@ -46,6 +46,11 @@
             color: v.$color_gray;
             @include m.fz(16);
         }
+        &-brown {
+            color: v.$color_brown;
+            @include m.fz(16);
+            line-height: calc(23/16);
+        }
     }
     &--number {
         font-family: "Roboto";

@@ -1,0 +1,9 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-note {
+    padding: 30px 16px 30px 20px;
+    &__inner {
+        padding-top: 30px;
+    }
+}

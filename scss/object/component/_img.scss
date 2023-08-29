@@ -2,7 +2,7 @@
 @use "../../foundation/variables" as v;
 
 .c-img {
-    &--item {
+    &__item {
         @include m.mq(){
             width: 100%;
             height: 230.53px;
@@ -22,5 +22,34 @@
             background-image: url(/img/food-search-pc.jpg);
             background-size: cover;
         }
+    }
+    &__head {
+        @include m.mq(){
+            width: 100%;
+            height: 124px;
+            background-image: url(/img/cooked-foods.png);
+            background-size: cover;
+            background-position: center bottom;
+        }
+    }
+    &__foot {
+        @include m.mq(){
+            width: 267px;
+            height: 166px;
+            background-image: url(/img/cooked-foods.png);
+            background-size: cover;
+        }
+    }
+    &__unit {
+        width: 144px;
+        height: 89px;
+        background-image: url(/img/cooked-foods.png);
+        background-size: cover;
+    }
+    &__caption {
+        width: 335px;
+        height: 205px;
+        background-image: url(/img/cooked-foods.png);
+        background-size: cover;
     }
 }

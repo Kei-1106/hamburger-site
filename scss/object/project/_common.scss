@@ -1,0 +1,20 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-common {
+    position: relative;
+    width: 100%;
+    height: 225px;
+    &__title {
+        position: absolute;
+        top: 91px;
+        @include m.mq(){
+            left: 20px;
+        }
+    }
+    &__mainvisual {
+        background-image: url(/img/burg_tizu.jpg);
+        background-position: center;
+        background-size: 235%;
+    }
+}

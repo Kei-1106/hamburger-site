@@ -347,6 +347,10 @@ button, input[type=button], a {
   cursor: pointer;
 }
 
+cite {
+  font-style: normal;
+}
+
 .l-footer {
   height: 120px;
   padding-bottom: 30px;
@@ -636,6 +640,9 @@ button, input[type=button], a {
     margin: 60px 100px 64px 100px;
   }
 }
+.l-wrapper--sub {
+  margin: 0 20px;
+}
 
 .c-background-color__orange-light {
   background-color: #FFF7EF;
@@ -651,6 +658,9 @@ button, input[type=button], a {
 }
 .c-background-color__gray {
   background-color: #707070;
+}
+.c-background-color__gray-verylight {
+  background-color: #f5f5f5;
 }
 .c-background-color__brown {
   background-color: #3C2A10;
@@ -689,7 +699,7 @@ button, input[type=button], a {
 }
 
 @media screen and (max-width: 375px) {
-  .c-img--item {
+  .c-img__item {
     width: 100%;
     height: 230.53px;
     background-image: url(/img/food-search.jpg);
@@ -697,7 +707,7 @@ button, input[type=button], a {
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
-  .c-img--item {
+  .c-img__item {
     width: 100%;
     min-width: 378.28px;
     background-image: url(/img/food-search-tb.jpg);
@@ -705,13 +715,42 @@ button, input[type=button], a {
   }
 }
 @media screen and (min-width: 835px) {
-  .c-img--item {
+  .c-img__item {
     width: 100%;
     min-width: 677px;
     min-height: 471px;
     background-image: url(/img/food-search-pc.jpg);
     background-size: cover;
   }
+}
+@media screen and (max-width: 375px) {
+  .c-img__head {
+    width: 100%;
+    height: 124px;
+    background-image: url(/img/cooked-foods.png);
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+@media screen and (max-width: 375px) {
+  .c-img__foot {
+    width: 267px;
+    height: 166px;
+    background-image: url(/img/cooked-foods.png);
+    background-size: cover;
+  }
+}
+.c-img__unit {
+  width: 144px;
+  height: 89px;
+  background-image: url(/img/cooked-foods.png);
+  background-size: cover;
+}
+.c-img__caption {
+  width: 335px;
+  height: 205px;
+  background-image: url(/img/cooked-foods.png);
+  background-size: cover;
 }
 
 .c-list {
@@ -821,6 +860,11 @@ button, input[type=button], a {
   color: #707070;
   font-size: 16px;
 }
+.c-text--small-brown {
+  color: #3C2A10;
+  font-size: 16px;
+  line-height: 1.4375;
+}
 .c-text--number {
   font-family: "Roboto";
   font-weight: bold;
@@ -868,6 +912,16 @@ button, input[type=button], a {
   .c-title--small {
     font-size: 1.875vw;
   }
+}
+.c-title--small-sub {
+  color: #3C2A10;
+  font-size: 6.4171122995vw;
+  font-weight: bold;
+}
+.c-title--tiny {
+  color: #3C2A10;
+  font-size: 5.3475935829vw;
+  font-weight: bold;
 }
 .c-title--item {
   font-size: 22px;
@@ -1226,6 +1280,26 @@ button, input[type=button], a {
   }
 }
 
+.p-common {
+  position: relative;
+  width: 100%;
+  height: 225px;
+}
+.p-common__title {
+  position: absolute;
+  top: 91px;
+}
+@media screen and (max-width: 375px) {
+  .p-common__title {
+    left: 20px;
+  }
+}
+.p-common__mainvisual {
+  background-image: url(/img/burg_tizu.jpg);
+  background-position: center;
+  background-size: 235%;
+}
+
 .p-content {
   position: relative;
   z-index: 800;
@@ -1378,6 +1452,13 @@ button, input[type=button], a {
   }
 }
 
+.p-note {
+  padding: 30px 16px 30px 20px;
+}
+.p-note__inner {
+  padding-top: 30px;
+}
+
 .p-pagination {
   margin-top: 60.9px;
 }
@@ -1424,8 +1505,40 @@ button, input[type=button], a {
   }
 }
 
-.product__img {
-  background-image: url(/img/food-search.jpg);
+.p-product {
+  margin-top: 30px;
+}
+.p-product__large {
+  margin-top: 36px;
+}
+.p-product__medium {
+  margin-top: 34px;
+}
+.p-product__small {
+  margin-top: 29px;
+}
+.p-product__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-product__inner--bottom {
+  margin-bottom: 20px;
+}
+.p-product__inner--list {
+  margin-top: 20px;
+  padding-left: 18px;
+}
+.p-product__inner--list-sub {
+  margin-top: 20px;
+}
+.p-product__inner--text {
+  width: 183px;
+}
+.p-product__tag {
+  padding: 50px 59px 50px 50px;
+}
+.p-product__tag--overlay {
+  font-family: "M+ 1m";
 }
 
 .p-search-box {
@@ -1448,6 +1561,7 @@ button, input[type=button], a {
 @media screen and (max-width: 375px) {
   .p-search-box__inner {
     margin-right: 12px;
+    min-width: 230px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
@@ -1519,6 +1633,17 @@ button, input[type=button], a {
     flex-direction: column;
   }
 }
+.u-display__reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.u-display__center {
+  display: flex;
+  justify-content: center;
+}
+.u-display__wrap {
+  flex-wrap: wrap;
+}
 
 .u-font--bold {
   font-weight: bold;
@@ -1558,14 +1683,38 @@ button, input[type=button], a {
   }
 }
 
+.u-margin--left {
+  margin-left: 10px;
+}
+.u-margin--right {
+  margin-right: 10px;
+}
+.u-margin--top {
+  margin-top: 60px;
+}
+
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .u-padding--left {
     padding-left: 1px;
   }
 }
+@media screen and (max-width: 375px) {
+  .u-padding--bottom {
+    padding-bottom: 177px;
+  }
+}
 
 .u-position {
   position: relative;
+}
+.u-position-sub {
+  position: relative;
+  z-index: 1000;
+}
+
+.u-text__link {
+  color: #4A6C9B;
+  text-decoration: underline;
 }
 
 /** 

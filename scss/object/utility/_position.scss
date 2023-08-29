@@ -3,4 +3,8 @@
 
 .u-position {
     position: relative;
+    &-sub {
+        position: relative;
+        z-index: 1000;
+    }
 }

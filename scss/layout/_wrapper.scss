@@ -11,4 +11,7 @@
     @include m.mq(pc){
         margin: 60px 100px 64px 100px;
     }
+    &--sub {
+        margin: 0 20px;
+    }
 }

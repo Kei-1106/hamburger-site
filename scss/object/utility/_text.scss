@@ -1,0 +1,9 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.u-text {
+    &__link {
+        color: v.$color_blue-pale;
+        text-decoration: underline;
+    }
+}

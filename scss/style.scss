@@ -37,9 +37,11 @@
 @forward "object/project/archive";
 @forward "object/project/article";
 @forward "object/project/card";
+@forward "object/project/common";
 @forward "object/project/content";
 @forward "object/project/group";
 @forward "object/project/home";
+@forward "object/project/note";
 @forward "object/project/pagination";
 @forward "object/project/product";
 @forward "object/project/search-box";
@@ -50,5 +52,7 @@
 @forward "object/utility/display";
 @forward "object/utility/font";
 @forward "object/utility/gap";
+@forward "object/utility/margin";
 @forward "object/utility/padding";
 @forward "object/utility/position";
+@forward "object/utility/text";
