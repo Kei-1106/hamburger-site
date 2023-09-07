@@ -40,3 +40,8 @@ $breakpoint: (
 @mixin roboto{
     font-family: "Roboto";
 }
+
+//デフォルトの文字の太さの設定
+@mixin normal{
+    font-weight: normal;
+}

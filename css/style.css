@@ -686,6 +686,16 @@ cite {
   border: none;
   cursor: pointer;
 }
+.c-button--secondary {
+  width: 335px;
+  height: 81px;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background-color: #F2EDE9;
+}
 
 .c-icon {
   background: url(/img/search01.png);
@@ -1146,6 +1156,22 @@ cite {
 }
 .p-archive__middle {
   margin-bottom: 30px;
+}
+
+.p-area {
+  border-collapse: collapse;
+}
+.p-area__item {
+  border: 1px solid #707070;
+}
+.p-area__item--left {
+  width: 135px;
+  height: 77px;
+}
+.p-area__item--right {
+  border-left: 1px solid #707070;
+  width: 200px;
+  height: 77px;
 }
 
 @media screen and (max-width: 375px) {
@@ -1650,6 +1676,9 @@ cite {
 }
 .u-font--roboto {
   font-family: "Roboto";
+}
+.u-font--normal {
+  font-weight: normal;
 }
 
 @media screen and (max-width: 375px) {

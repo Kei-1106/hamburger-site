@@ -8,4 +8,7 @@
     &--roboto {
         @include m.roboto;
     }
+    &--normal {
+        @include m.normal;
+    }
 }

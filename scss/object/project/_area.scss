@@ -1,0 +1,18 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variables" as v;
+
+.p-area  {
+    border-collapse: collapse;
+    &__item {
+        border: v.$box_border;
+        &--left {
+            width: 135px;
+            height: 77px;
+        }
+        &--right {
+            border-left: v.$box_border;
+            width: 200px;
+            height: 77px;
+        }
+    }
+}
