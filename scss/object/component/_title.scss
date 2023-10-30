@@ -23,12 +23,24 @@
             color: v.$color_brown;
             @include m.font-vw(24, 374);
             @include m.bold;
+            @include m.mq(tb){
+                @include m.font-vw(28, 834);
+            }
+            @include m.mq(pc){
+                @include m.font-vw(28, 1920);
+            }
         }
     } 
     &--tiny {
         color: v.$color_brown;
         @include m.font-vw(20, 374);
         @include m.bold;
+        @include m.mq(tb){
+            @include m.font-vw(20, 834);
+        }
+        @include m.mq(pc){
+            @include m.font-vw(20, 1920);
+        }
     }
     &--item {
         @include m.fz(22);
@@ -68,6 +80,16 @@
         &-bottom {
             @include m.fz(16);
             color: v.$color_white;
+        }
+    }
+    &--product {
+        @include m.font-vw(36, 374);
+        color: v.$color_white;
+        @include m.mq(tb){
+            @include m.font-vw(60, 834);
+        }
+        @include m.mq(pc){
+            @include m.font-vw(60, 1920);
         }
     }
 }

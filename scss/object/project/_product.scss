@@ -3,14 +3,32 @@
 
 .p-product {
     margin-top: 30px;
+    @include m.mq(tb){
+        margin-top: 60px;
+    }
+    &__another {
+        margin-top: 30px;
+        @include m.mq(tb){
+            margin-top: 59px;
+        }
+    }
     &__large {
         margin-top: 36px;
+        @include m.mq(tb){
+            margin-top: 75px;
+        }
     }
     &__medium {
         margin-top: 34px;
+        @include m.mq(tb){
+            margin-top: 60px;
+        }
     }
     &__small {
         margin-top: 29px;
+        @include m.mq(tb){
+            margin-top: 59px;
+        }
     }
     &__inner {
         display: flex;
@@ -26,13 +44,25 @@
             }
         }
         &--text {
-            width: 183px;
+            flex: 1;
         }
     }
     &__tag {
         padding: 50px 59px 50px 50px;
         &--overlay {
             font-family: "M+ 1m";
+        }
+    }
+    &__unit {
+        margin-top: 30px;
+        @include m.mq(tb){
+            margin-top: 117px;
+        }
+    }
+    &__img {
+        margin-top: 30px;
+        @include m.mq(tb){
+            margin-top: 61px;
         }
     }
 }

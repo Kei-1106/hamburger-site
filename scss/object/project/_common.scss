@@ -4,12 +4,21 @@
 .p-common {
     position: relative;
     width: 100%;
-    height: 225px;
+    @include m.mq(){
+        height: 225px;
+    }
+    @include m.mq(tb){
+        height: 500px;
+    }
     &__title {
         position: absolute;
-        top: 91px;
         @include m.mq(){
+            top: 91px;
             left: 20px;
+        }
+        @include m.mq(tb){
+            top: 208px;
+            left: 86px;
         }
     }
     &__mainvisual {

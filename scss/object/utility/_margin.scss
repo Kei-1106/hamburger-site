@@ -4,9 +4,15 @@
 .u-margin {
     &--left {
         margin-left: 10px;
+        @include m.mq(tb){
+            margin-left: 21px;
+        }
     }
     &--right {
         margin-right: 10px;
+        @include m.mq(tb){
+            margin-right: 21px;
+        }
     }
     &--top {
         margin-top: 60px;
