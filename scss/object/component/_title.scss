@@ -6,6 +6,9 @@
     @include m.roboto;
     @include m.fz(41);
     @include m.bold;
+    @include m.mq(tb){
+        @include m.font-vw(44, 834);
+    }
     @include m.mq(pc){
         @include m.font-vw(80,1920);
     }

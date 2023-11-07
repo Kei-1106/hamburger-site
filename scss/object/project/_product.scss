@@ -33,6 +33,9 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
+        @include m.mq(tb){
+            justify-content: space-between;
+        }
         &--bottom {
             margin-bottom: 20px;
         }
@@ -49,6 +52,9 @@
     }
     &__tag {
         padding: 50px 59px 50px 50px;
+        @include m.mq(tb){
+            padding: 50px 69px 50px 50px;
+        }
         &--overlay {
             font-family: "M+ 1m";
         }

@@ -2,6 +2,9 @@
 @use "../../foundation/variables" as v;
 
 .u-padding {
+    @include m.mq(tb){
+        padding-left: 50px;
+    }
     &--left {
         @include m.mq(tb){
             padding-left: 1px;

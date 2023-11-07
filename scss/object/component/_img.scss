@@ -56,9 +56,11 @@
         }
     }
     &__caption {
-        width: 335px;
-        height: 205px;
-        background-image: url(/img/cooked-foods.png);
+        width: 100%;
+        height: auto;
         background-size: cover;
+        @include m.mq(tb){
+            width: 48.88%;
+        }
     }
 }

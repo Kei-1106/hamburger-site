@@ -781,10 +781,14 @@ cite {
   }
 }
 .c-img__caption {
-  width: 335px;
-  height: 205px;
-  background-image: url(/img/cooked-foods.png);
+  width: 100%;
+  height: auto;
   background-size: cover;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-img__caption {
+    width: 48.88%;
+  }
 }
 
 .c-list {
@@ -926,6 +930,11 @@ cite {
   font-family: "Roboto";
   font-size: 41px;
   font-weight: bold;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-title {
+    font-size: 5.2757793765vw;
+  }
 }
 @media screen and (min-width: 835px) {
   .c-title {
@@ -1658,6 +1667,11 @@ cite {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-product__inner {
+    justify-content: space-between;
+  }
+}
 .p-product__inner--bottom {
   margin-bottom: 20px;
 }
@@ -1673,6 +1687,11 @@ cite {
 }
 .p-product__tag {
   padding: 50px 59px 50px 50px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-product__tag {
+    padding: 50px 69px 50px 50px;
+  }
 }
 .p-product__tag--overlay {
   font-family: "M+ 1m";
@@ -1839,6 +1858,11 @@ cite {
   }
 }
 
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .u-margin {
+    margin-top: 241px;
+  }
+}
 .u-margin--left {
   margin-left: 10px;
 }
@@ -1859,6 +1883,11 @@ cite {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .u-padding {
+    padding-left: 50px;
+  }
+}
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .u-padding--left {
     padding-left: 1px;
