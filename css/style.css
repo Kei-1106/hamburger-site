@@ -694,7 +694,7 @@ cite {
   cursor: pointer;
 }
 .c-button--secondary {
-  width: 335px;
+  max-width: 335px;
   height: 81px;
   border-radius: 20px;
   border: 1px solid #707070;
@@ -702,6 +702,11 @@ cite {
   align-items: center;
   text-align: center;
   background-color: #F2EDE9;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .c-button--secondary {
+    max-width: 429px;
+  }
 }
 
 .c-icon {
@@ -764,7 +769,7 @@ cite {
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__foot {
-    width: 581px;
+    width: 81.37%;
     height: 358px;
   }
 }
@@ -776,7 +781,7 @@ cite {
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__unit {
-    width: 306px;
+    width: calc(45.8% - 21px);
     height: 189px;
   }
 }
@@ -1226,19 +1231,33 @@ cite {
 }
 
 .p-area {
+  width: 100%;
   border-collapse: collapse;
 }
 .p-area__item {
   border: 1px solid #707070;
+  text-align: left;
 }
 .p-area__item--left {
   width: 135px;
   height: 77px;
+  padding-left: 30px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-area__item--left {
+    width: 215px;
+  }
 }
 .p-area__item--right {
   border-left: 1px solid #707070;
   width: 200px;
   height: 77px;
+  padding-left: 30px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .p-area__item--right {
+    width: 499px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1376,19 +1395,17 @@ cite {
 .p-common {
   position: relative;
   width: 100%;
+  height: 500px;
 }
 @media screen and (max-width: 375px) {
   .p-common {
     height: 225px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 834px) {
-  .p-common {
-    height: 500px;
-  }
-}
 .p-common__title {
   position: absolute;
+  top: 208px;
+  left: 86px;
 }
 @media screen and (max-width: 375px) {
   .p-common__title {
@@ -1396,16 +1413,15 @@ cite {
     left: 20px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 834px) {
-  .p-common__title {
-    top: 208px;
-    left: 86px;
-  }
-}
 .p-common__mainvisual {
   background-image: url(/img/burg_tizu.jpg);
   background-position: center;
   background-size: 235%;
+}
+@media screen and (min-width: 835px) {
+  .p-common__mainvisual {
+    background-size: 100%;
+  }
 }
 
 .p-content {
@@ -1629,6 +1645,7 @@ cite {
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .p-product {
     margin-top: 60px;
+    max-width: 100%;
   }
 }
 .p-product__another {
@@ -1683,7 +1700,7 @@ cite {
   margin-top: 20px;
 }
 .p-product__inner--text {
-  flex: 1;
+  width: 54.2%;
 }
 .p-product__tag {
   padding: 50px 59px 50px 50px;
@@ -1697,10 +1714,14 @@ cite {
   font-family: "M+ 1m";
 }
 .p-product__unit {
+  display: flex;
+  justify-content: space-between;
+}
+.p-product__unit--second {
   margin-top: 30px;
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
-  .p-product__unit {
+  .p-product__unit--second {
     margin-top: 117px;
   }
 }
@@ -1806,7 +1827,6 @@ cite {
   }
 }
 .u-display__reverse {
-  display: flex;
   flex-direction: row-reverse;
 }
 .u-display__center {
@@ -1882,6 +1902,11 @@ cite {
 .u-margin--top {
   margin-top: 60px;
 }
+@media screen and (min-width: 376px) and (max-width: 834px) {
+  .u-margin--top-sub {
+    margin-top: 117px;
+  }
+}
 
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .u-padding {
@@ -1893,9 +1918,12 @@ cite {
     padding-left: 1px;
   }
 }
-@media screen and (max-width: 375px) {
+.u-padding--bottom {
+  padding-bottom: 177px;
+}
+@media screen and (min-width: 376px) and (max-width: 834px) {
   .u-padding--bottom {
-    padding-bottom: 177px;
+    padding-bottom: 228px;
   }
 }
 

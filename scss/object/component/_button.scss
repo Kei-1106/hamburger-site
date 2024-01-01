@@ -19,7 +19,7 @@
         cursor: pointer;
     }
     &--secondary {
-        width: 335px;
+        max-width: 335px;
         height: 81px;
         border-radius: 20px;
         border: v.$box_border;
@@ -27,5 +27,8 @@
         align-items: center;
         text-align: center;
         background-color: v.$color_orange-verylight;
+        @include m.mq(tb){
+            max-width: 429px;
+        }
     }
 }

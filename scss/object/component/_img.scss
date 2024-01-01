@@ -41,7 +41,7 @@
         background-image: url(/img/cooked-foods.png);
         background-size: cover;
         @include m.mq(tb){
-            width: 581px;
+            width: 81.37%;
             height: 358px;
         }
     }
@@ -51,7 +51,7 @@
         width: 144px;
         height: 89px;
         @include m.mq(tb){
-            width: 306px;
+            width: calc(45.8% - 21px);
             height: 189px;
         }
     }

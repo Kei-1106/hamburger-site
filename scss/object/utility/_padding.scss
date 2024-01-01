@@ -11,8 +11,9 @@
         }
     }
     &--bottom {
-        @include m.mq(){
-            padding-bottom: 177px;
+        padding-bottom: 177px;
+        @include m.mq(tb){
+            padding-bottom: 228px;
         }
     }
 }

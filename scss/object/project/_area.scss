@@ -2,17 +2,27 @@
 @use "../../foundation/variables" as v;
 
 .p-area  {
+    width: 100%;
     border-collapse: collapse;
     &__item {
         border: v.$box_border;
+        text-align: left;
         &--left {
             width: 135px;
             height: 77px;
+            padding-left: 30px;
+            @include m.mq(tb){
+                width: 215px;
+            }
         }
         &--right {
             border-left: v.$box_border;
             width: 200px;
             height: 77px;
+            padding-left: 30px;
+            @include m.mq(tb){
+                width: 499px;
+            }
         }
     }
 }
