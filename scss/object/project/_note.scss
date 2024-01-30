@@ -6,10 +6,13 @@
     @include m.mq(tb){
         padding: 50px 56px 60px 50px;
     }
+    @include m.mq(pc){
+        padding: 50px 60px 50px 50px;
+    }
     &__inner {
-        padding-top: 30px;
-        @include m.mq(tb){
-            padding-top: 60px;
+        padding-top: 60px;
+        @include m.mq(){
+            padding-top: 30px;
         }
     }
 }

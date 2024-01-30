@@ -25,14 +25,18 @@
     }
     &__head {
         width: 100%;
-        background-image: url(/img/cooked-foods.png);
+        background-image: url(/img/cooked-foods.jpg);
         background-size: cover;
-        background-position: center bottom;
+        background-position: center bottom -30px;
+        background-repeat: no-repeat;
         @include m.mq(){
             height: 124px;
         }
         @include m.mq(tb){
             height: 264px;
+        }
+        @include m.mq(pc){
+            height: 500px;
         }
     }
     &__foot {
@@ -40,19 +44,29 @@
         height: 166px;
         background-image: url(/img/cooked-foods.png);
         background-size: cover;
+        background-position: center bottom;
         @include m.mq(tb){
             width: 81.37%;
+            height: 358px;
+        }
+        @include m.mq(pc){
+            width: 42.94%;
             height: 358px;
         }
     }
     &__unit {
         background-image: url(/img/cooked-foods.png);
         background-size: cover;
+        background-position: center bottom;
         width: 144px;
         height: 89px;
         @include m.mq(tb){
             width: calc(45.8% - 21px);
             height: 189px;
+        }
+        @include m.mq(pc){
+            width: calc(45.9% - 40px);
+            height: 358px;
         }
     }
     &__caption {
@@ -61,6 +75,9 @@
         background-size: cover;
         @include m.mq(tb){
             width: 48.88%;
+        }
+        @include m.mq(pc){
+            width: 32.3%;
         }
     }
 }

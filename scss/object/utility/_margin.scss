@@ -25,4 +25,9 @@
             }
         }
     }
+    &--table {
+        @include m.mq(pc){
+            margin-top: 50px;
+        }
+    }
 }

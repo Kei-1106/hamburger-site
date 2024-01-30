@@ -14,6 +14,9 @@
             @include m.mq(tb){
                 width: 215px;
             }
+            @include m.mq(pc){
+                width: 429px;
+            }
         }
         &--right {
             border-left: v.$box_border;
@@ -22,6 +25,9 @@
             padding-left: 30px;
             @include m.mq(tb){
                 width: 499px;
+            }
+            @include m.mq(pc){
+                width: 929px;
             }
         }
     }

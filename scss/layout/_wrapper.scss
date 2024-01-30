@@ -18,5 +18,8 @@
         @include m.mq(tb){
             margin: 0 60px;
         }
+        @include m.mq(pc){
+            margin: 0 100px;
+        }
     }
 }
