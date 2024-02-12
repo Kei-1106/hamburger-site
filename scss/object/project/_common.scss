@@ -24,5 +24,13 @@
         @include m.mq(pc){
             background-size: 100%;
         }
+        &-sub {
+            background-image: url(/img/page-title_shop_pc.png);
+            background-position: center;
+            background-size: 235%;
+            @include m.mq(pc){
+                background-size: 100%;
+            }
+        }
     }
 }

@@ -795,7 +795,7 @@ cite {
   background-image: url(/img/cooked-foods.png);
   background-size: cover;
   background-position: center bottom;
-  width: 144px;
+  width: 134px;
   height: 89px;
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
@@ -1460,6 +1460,16 @@ cite {
 }
 @media screen and (min-width: 835px) {
   .p-common__mainvisual {
+    background-size: 100%;
+  }
+}
+.p-common__mainvisual-sub {
+  background-image: url(/img/page-title_shop_pc.png);
+  background-position: center;
+  background-size: 235%;
+}
+@media screen and (min-width: 835px) {
+  .p-common__mainvisual-sub {
     background-size: 100%;
   }
 }
