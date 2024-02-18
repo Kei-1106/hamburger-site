@@ -381,6 +381,9 @@ cite {
 .l-footer__inner--right {
   border-left: solid 2px #fff;
 }
+.l-footer__inner-active {
+  z-index: unset;
+}
 
 .l-header {
   position: relative;
@@ -707,11 +710,17 @@ cite {
   align-items: center;
   text-align: center;
   background-color: #F2EDE9;
+  position: relative;
+  z-index: 800;
+  cursor: pointer;
 }
 @media screen and (max-width: 375px) {
   .c-button--secondary {
     max-width: 335px;
   }
+}
+.c-button--secondary-active {
+  z-index: unset;
 }
 
 .c-icon {
@@ -727,7 +736,6 @@ cite {
 
 @media screen and (max-width: 375px) {
   .c-img__item {
-    width: 100%;
     height: 230.53px;
     background-image: url(/img/food-search.jpg);
     background-size: cover;
@@ -735,41 +743,43 @@ cite {
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__item {
-    width: 100%;
     min-width: 378.28px;
     background-image: url(/img/food-search-tb.jpg);
     background-size: cover;
+    background-position: bottom left;
   }
 }
 @media screen and (min-width: 835px) {
   .c-img__item {
-    width: 100%;
     min-width: 677px;
     min-height: 471px;
     background-image: url(/img/food-search-pc.jpg);
     background-size: cover;
+    background-position: bottom left;
   }
 }
 .c-img__head {
   width: 100%;
   background-image: url(/img/cooked-foods.jpg);
   background-size: cover;
-  background-position: center bottom -30px;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 375px) {
   .c-img__head {
     height: 124px;
+    background-position: center bottom -5px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__head {
     height: 264px;
+    background-position: center bottom -20px;
   }
 }
 @media screen and (min-width: 835px) {
   .c-img__head {
     height: 500px;
+    background-position: center bottom -80px;
   }
 }
 .c-img__foot {
@@ -2016,7 +2026,7 @@ cite {
 }
 .u-position-sub {
   position: relative;
-  z-index: 1000;
+  z-index: 800;
 }
 
 .u-text__link {

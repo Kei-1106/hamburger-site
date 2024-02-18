@@ -27,8 +27,14 @@
         align-items: center;
         text-align: center;
         background-color: v.$color_orange-verylight;
+        position: relative;
+        z-index: 800;
+        cursor: pointer;
         @include m.mq(){
             max-width: 335px;
+        }
+        &-active {
+            z-index: unset;
         }
     }
 }

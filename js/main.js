@@ -22,6 +22,8 @@ ham.on('click', function(){
     $(".l-main-hide-contents").toggleClass("l-main-hide-contents-active");
     $(".l-header").toggleClass("l-header-active");
     $(".p-content").toggleClass("p-content-active");
+    $(".c-button--secondary").toggleClass("c-button--secondary-active");
+    $(".l-footer__inner").toggleClass("l-footer__inner-active");
     });
 });
 

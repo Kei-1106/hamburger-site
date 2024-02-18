@@ -23,5 +23,8 @@
         &--right{
             border-left: solid 2px v.$color_white;
         }
+        &-active {
+            z-index: unset;
+        }
     }
 }
