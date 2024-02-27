@@ -737,14 +737,12 @@ cite {
 @media screen and (max-width: 375px) {
   .c-img__item {
     height: 230.53px;
-    background-image: url(/img/food-search.jpg);
     background-size: cover;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__item {
     min-width: 378.28px;
-    background-image: url(/img/food-search-tb.jpg);
     background-size: cover;
     background-position: bottom left;
   }
@@ -753,41 +751,39 @@ cite {
   .c-img__item {
     min-width: 677px;
     min-height: 471px;
-    background-image: url(/img/food-search-pc.jpg);
     background-size: cover;
     background-position: bottom left;
   }
 }
 .c-img__head {
   width: 100%;
-  background-image: url(/img/cooked-foods.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 @media screen and (max-width: 375px) {
   .c-img__head {
     height: 124px;
-    background-position: center bottom -5px;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__head {
     height: 264px;
-    background-position: center bottom -20px;
   }
 }
 @media screen and (min-width: 835px) {
   .c-img__head {
     height: 500px;
-    background-position: center bottom -80px;
   }
 }
 .c-img__foot {
   width: 267px;
   height: 166px;
-  background-image: url(/img/cooked-foods.png);
-  background-size: cover;
-  background-position: center bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .c-img__foot {
@@ -803,8 +799,10 @@ cite {
 }
 .c-img__unit {
   background-image: url(/img/cooked-foods.png);
-  background-size: cover;
-  background-position: center bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
   width: 134px;
   height: 89px;
 }
