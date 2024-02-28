@@ -3,10 +3,10 @@
 
 .u-display {
     @include m.mq(){
-        width: 375px;
+        width: 428px;
     }
     @include m.mq(tb){
-        width: 834px;
+        width: 960px;
     }
     @include m.mq(pc){
         width: 100%;

@@ -3,9 +3,9 @@ $sizes: 'sm', 'tb', 'pc';
 
 //ブレイクポイント
 $breakpoint: (
-    'sm': 'screen and (max-width: 375px)',//スマートフォンの設定
-    'tb': 'screen and (min-width: 376px) and (max-width: 834px)',//タブレットの設定
-    'pc': 'screen and (min-width: 835px)',//PCの設定
+    'sm': 'screen and (max-width: 428px)',//スマートフォンの設定
+    'tb': 'screen and (min-width: 429px) and (max-width: 960px)',//タブレットの設定
+    'pc': 'screen and (min-width: 961px)',//PCの設定
 ) !default;
 
 //mixinを定義
