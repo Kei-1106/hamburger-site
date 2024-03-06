@@ -563,6 +563,11 @@ cite {
           animation: opa 1s ease 0s both;
   background-color: #000;
 }
+@media screen and (min-width: 961px) {
+  .l-main-hide-contents-active {
+    display: none;
+  }
+}
 
 .l-sidebar {
   width: 328px;
@@ -682,19 +687,17 @@ cite {
 }
 
 .c-button {
+  padding: 10px 42.1px 10.5px 41.1px;
   border-radius: 100vh;
   align-items: center;
   display: grid;
   text-align: center;
-  width: 163.16px;
-  height: 42.47px;
   background-color: #fff;
   border: 1px solid #707070;
 }
 @media screen and (min-width: 961px) {
   .c-button {
-    width: 292px;
-    height: 76px;
+    padding: 27px 106px;
   }
 }
 .c-button__hamburger {
@@ -920,7 +923,6 @@ cite {
 .c-text--medium {
   color: #fff;
   font-size: 4.2666666667vw;
-  font-weight: bold;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .c-text--medium {
@@ -934,12 +936,32 @@ cite {
 }
 .c-text--small {
   color: #fff;
-  font-size: 16px;
+  font-size: 4.2666666667vw;
   line-height: 1.4375;
+}
+@media screen and (min-width: 429px) and (max-width: 960px) {
+  .c-text--small {
+    font-size: 1.9184652278vw;
+  }
+}
+@media screen and (min-width: 961px) {
+  .c-text--small {
+    font-size: 0.8333333333vw;
+  }
 }
 .c-text--small-gray {
   color: #707070;
-  font-size: 16px;
+  font-size: 4.2666666667vw;
+}
+@media screen and (min-width: 429px) and (max-width: 960px) {
+  .c-text--small-gray {
+    font-size: 1.9184652278vw;
+  }
+}
+@media screen and (min-width: 961px) {
+  .c-text--small-gray {
+    font-size: 0.8333333333vw;
+  }
 }
 .c-text--small-brown {
   color: #3C2A10;
@@ -1246,6 +1268,41 @@ cite {
     left: 86px;
   }
 }
+.p-archive__title--left {
+  position: absolute;
+  bottom: 133px;
+  left: 86px;
+}
+@media screen and (max-width: 428px) {
+  .p-archive__title--left {
+    left: 37px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .p-archive__title--left {
+    bottom: 80px;
+  }
+}
+.p-archive__title--right {
+  position: absolute;
+  bottom: 104px;
+  left: 275px;
+}
+@media screen and (max-width: 428px) {
+  .p-archive__title--right {
+    left: 37px;
+  }
+}
+@media screen and (min-width: 429px) and (max-width: 960px) {
+  .p-archive__title--right {
+    bottom: 124px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .p-archive__title--right {
+    bottom: 104px;
+  }
+}
 @media screen and (max-width: 428px) {
   .p-archive__title--bottom {
     padding-top: 7px;
@@ -1539,6 +1596,8 @@ cite {
   }
 }
 .p-content__inner--bottom {
+  display: grid;
+  justify-content: center;
   margin: 0 auto 43.7px;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
@@ -2031,6 +2090,9 @@ cite {
 .u-text__link {
   color: #4A6C9B;
   text-decoration: underline;
+}
+.u-text__bold {
+  font-weight: bold;
 }
 
 /** 

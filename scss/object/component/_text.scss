@@ -30,7 +30,6 @@
     &--medium {
         color: v.$color_white;
         @include m.font-vw(16, 375);
-        font-weight: bold;
         @include m.mq(tb){
             @include m.font-vw(16, 834);
         }
@@ -40,11 +39,23 @@
     }
     &--small {
         color: v.$color_white;
-        @include m.fz(16);
+        @include m.font-vw(16, 375);
+        @include m.mq(tb){
+            @include m.font-vw(16, 834);
+        }
+        @include m.mq(pc){
+            @include m.font-vw(16, 1920);
+        }
         line-height: calc(23/16);
         &-gray {
             color: v.$color_gray;
-            @include m.fz(16);
+            @include m.font-vw(16, 375);
+            @include m.mq(tb){
+                @include m.font-vw(16, 834);
+            }
+            @include m.mq(pc){
+                @include m.font-vw(16, 1920);
+            }
         }
         &-brown {
             color: v.$color_brown;

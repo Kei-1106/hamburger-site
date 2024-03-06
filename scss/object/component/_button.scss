@@ -2,17 +2,15 @@
 @use "../../foundation/variables" as v;
 
 .c-button {
+    padding: 10px 42.1px 10.5px 41.1px;
     border-radius: 100vh;
     align-items: center;
     display: grid;
     text-align: center;
-    width: 163.16px;
-    height: 42.47px;
     background-color: v.$color_white;
     border: v.$box_border;
     @include m.mq(pc){
-        width: 292px;
-        height: 76px;
+        padding: 27px 106px;
     }
     &__hamburger {
         border: none;

@@ -40,6 +40,31 @@
             top: 80px;
             left: 86px;
         }
+        &--left {
+            position: absolute;
+            bottom: 133px;
+            left: 86px;
+            @include m.mq(){
+                left: 37px;
+            }
+            @include m.mq(pc){
+                bottom: 80px;
+            }
+        }
+        &--right {
+            position: absolute;
+            bottom: 104px;
+            left: 275px;
+            @include m.mq(){
+                left: 37px;
+            }
+            @include m.mq(tb){
+                bottom: 124px;
+            }
+            @include m.mq(pc){
+                bottom: 104px;
+            }
+        }
         &--bottom {
             @include m.mq(sm){
                 padding-top: 7px;

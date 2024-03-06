@@ -43,6 +43,8 @@
             }
         }
         &--bottom {
+            display: grid;
+            justify-content: center;
             margin: 0 auto 43.7px;
             @include m.mq(tb){
                 margin: 0 auto 40px;
