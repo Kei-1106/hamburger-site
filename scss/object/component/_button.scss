@@ -10,7 +10,7 @@
     background-color: v.$color_white;
     border: v.$box_border;
     @include m.mq(pc){
-        padding: 27px 106px;
+        padding: 1.68em 6.62em;
     }
     &__hamburger {
         border: none;
