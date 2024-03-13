@@ -30,6 +30,7 @@
     &--medium {
         color: v.$color_white;
         @include m.font-vw(16, 375);
+        @include m.bold;
         @include m.mq(tb){
             @include m.font-vw(16, 834);
         }
@@ -50,6 +51,7 @@
         &-gray {
             color: v.$color_gray;
             @include m.font-vw(16, 375);
+            @include m.bold;
             @include m.mq(tb){
                 @include m.font-vw(16, 834);
             }

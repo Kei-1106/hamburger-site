@@ -45,6 +45,9 @@
             @include m.mq(){
                 left: 37px;
             }
+            @include m.mq(tb){
+                bottom: 102px;
+            }
             @include m.mq(pc){
                 bottom: 80px;
             }

@@ -336,7 +336,6 @@ h1, h2, h3, h4, h5, h6, hr {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-weight: normal;
 }
 
 a, text, span, div {
@@ -916,6 +915,7 @@ cite {
 .c-text--medium {
   color: #fff;
   font-size: 4.2666666667vw;
+  font-weight: bold;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .c-text--medium {
@@ -945,6 +945,7 @@ cite {
 .c-text--small-gray {
   color: #707070;
   font-size: 4.2666666667vw;
+  font-weight: bold;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .c-text--small-gray {
@@ -1043,6 +1044,7 @@ cite {
 }
 .c-title--item {
   font-size: 22px;
+  font-weight: bold;
   color: #3C2A10;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
@@ -1058,6 +1060,7 @@ cite {
 .c-title--access {
   color: #fff;
   font-size: 30px;
+  font-weight: bold;
 }
 @media screen and (min-width: 961px) {
   .c-title--access {
@@ -1066,6 +1069,7 @@ cite {
 }
 .c-title--site {
   font-size: 36px;
+  font-weight: bold;
   color: #fff;
 }
 @media screen and (min-width: 961px) {
@@ -1266,6 +1270,11 @@ cite {
 @media screen and (max-width: 428px) {
   .p-archive__title--left {
     left: 37px;
+  }
+}
+@media screen and (min-width: 429px) and (max-width: 960px) {
+  .p-archive__title--left {
+    bottom: 102px;
   }
 }
 @media screen and (min-width: 961px) {
