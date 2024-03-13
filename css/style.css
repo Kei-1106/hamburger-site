@@ -323,7 +323,6 @@ body {
   font-family: "m-plus-1m", Meiryo, "Roboto", Roboto, "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Osaka, sans-serif;
   background-color: #fffdfa;
   overflow-x: hidden;
-  font-style: normal;
 }
 
 img {
@@ -337,6 +336,7 @@ h1, h2, h3, h4, h5, h6, hr {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-weight: normal;
 }
 
 a, text, span, div {
@@ -1002,7 +1002,6 @@ cite {
 .c-title--small {
   color: #3C2A10;
   font-size: 7.486631016vw;
-  font-weight: bold;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .c-title--small {
@@ -1017,7 +1016,6 @@ cite {
 .c-title--small-sub {
   color: #3C2A10;
   font-size: 6.4171122995vw;
-  font-weight: bold;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .c-title--small-sub {
@@ -1032,7 +1030,6 @@ cite {
 .c-title--tiny {
   color: #3C2A10;
   font-size: 5.3475935829vw;
-  font-weight: bold;
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .c-title--tiny {
@@ -1243,22 +1240,22 @@ cite {
 }
 .p-archive__title {
   position: absolute;
-  top: 102px;
-  left: 37px;
+  bottom: 132px;
+  left: 86px;
+}
+@media screen and (max-width: 428px) {
+  .p-archive__title {
+    left: 37px;
+  }
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .p-archive__title {
-    display: flex;
-    align-items: center;
-    left: 86px;
+    bottom: 102px;
   }
 }
 @media screen and (min-width: 961px) {
   .p-archive__title {
-    display: flex;
-    align-items: center;
-    top: 80px;
-    left: 86px;
+    bottom: 80px;
   }
 }
 .p-archive__title--left {
@@ -1296,19 +1293,19 @@ cite {
     bottom: 104px;
   }
 }
+.p-archive__title--bottom {
+  position: absolute;
+  left: 311px;
+  bottom: 104px;
+}
 @media screen and (max-width: 428px) {
   .p-archive__title--bottom {
-    padding-top: 7px;
+    left: 37px;
   }
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .p-archive__title--bottom {
-    padding-left: 20px;
-  }
-}
-@media screen and (min-width: 961px) {
-  .p-archive__title--bottom {
-    padding-left: 20px;
+    bottom: 126px;
   }
 }
 .p-archive__heading {

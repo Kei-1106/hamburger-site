@@ -27,18 +27,16 @@
     }
     &__title {
         position: absolute;
-        top: 102px;
-        left: 37px;
+        bottom: 132px;
+        left: 86px;
+        @include m.mq(){
+            left: 37px;
+        }
         @include m.mq(tb){
-            display: flex;
-            align-items: center;
-            left: 86px;
+            bottom: 102px;
         }
         @include m.mq(pc){
-            display: flex;
-            align-items: center;
-            top: 80px;
-            left: 86px;
+            bottom : 80px;
         }
         &--left {
             position: absolute;
@@ -66,14 +64,14 @@
             }
         }
         &--bottom {
+            position: absolute;
+            left: 311px;
+            bottom: 104px;
             @include m.mq(sm){
-                padding-top: 7px;
+                left: 37px;
             }
             @include m.mq(tb){
-                padding-left: 20px;
-            }
-            @include m.mq(pc){
-                padding-left: 20px;
+                bottom: 126px;
             }
         }
     }

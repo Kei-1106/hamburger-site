@@ -8,7 +8,6 @@ body {
     font-family: "m-plus-1m", Meiryo, 'Roboto', Roboto,'YuGothic', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Osaka, sans-serif;
     background-color: #fffdfa;
     overflow-x: hidden;
-    font-style: normal;
 }
 
 img {
@@ -22,6 +21,7 @@ h1, h2, h3, h4, h5, h6, hr {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-weight: normal;
 }
 
 a, text, span, div {

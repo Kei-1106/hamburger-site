@@ -15,7 +15,6 @@
     &--small {
         color: v.$color_brown;
         @include m.font-vw(28, 374);
-        @include m.bold; 
         @include m.mq(tb){
             @include m.font-vw(36, 834);
         }
@@ -25,7 +24,6 @@
         &-sub {
             color: v.$color_brown;
             @include m.font-vw(24, 374);
-            @include m.bold;
             @include m.mq(tb){
                 @include m.font-vw(28, 834);
             }
@@ -37,7 +35,6 @@
     &--tiny {
         color: v.$color_brown;
         @include m.font-vw(20, 374);
-        @include m.bold;
         @include m.mq(tb){
             @include m.font-vw(20, 834);
         }
