@@ -5,9 +5,10 @@ html {
 }
 
 body {
-    font-family: 'M+ 1m', Meiryo, 'Roboto', Roboto,'YuGothic', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Osaka, sans-serif;
+    font-family: "m-plus-1m", Meiryo, 'Roboto', Roboto,'YuGothic', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Osaka, sans-serif;
     background-color: #fffdfa;
     overflow-x: hidden;
+    font-style: normal;
 }
 
 img {
@@ -28,7 +29,7 @@ a, text, span, div {
     color: #707070;
 }
 
-button, input[type="button"],a {
+button, input[type="submit"],a {
     cursor: pointer;
 }
 

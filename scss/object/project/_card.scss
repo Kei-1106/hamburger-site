@@ -40,14 +40,15 @@
     &__inner {
         flex-direction: column;
         &--middle {
+            height: 100%;
             @include m.mq(){
-                min-height: 616px;
+                gap: 283.7px;
             }
             @include m.mq(tb){
-                min-height: 654px;
+                gap: 283.4px;
             }
             @include m.mq(pc){
-                min-height: 1167px;
+                gap: 660.5px;
             }
             justify-content: space-between;
             &-bottom {
@@ -76,11 +77,10 @@
         }
     }
     &__link {
-        @include m.mq(tb){
-            width: 50%;
-        }
-        @include m.mq(pc){
-            width: 50%;
+        display: flex;
+        width: 50%;
+        @include m.mq(){
+            width: 100%;
         }
     }
 }

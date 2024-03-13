@@ -1,4 +1,16 @@
 $(function(){
+    $('input[type="submit"].c-search--button').on("click", function(){//検索ボタンクリック時に
+        var search_catch = $('input[type="text"].c-search').val();//検索フォームの文字を格納
+        sessionStorage.setItem('key', search_catch);
+    });
+});
+
+$(function(){
+    var keep_search = sessionStorage.getItem('key');//格納した文字を呼び出し
+    $(".c-search").val(keep_search);
+});
+
+$(function(){
     //フォーカス時にアイコンを消す
     $(".c-search").focus(function(){
         $(".c-icon").addClass("c-icon--focus");
@@ -11,6 +23,11 @@ $(function(){
     });
 });
 
+$(function(){
+    if($('input[type="text"].c-search').val().length !== 0){
+        $(".c-icon").addClass("c-icon--focus");
+    }
+});
 
 $(function(){
 const ham = $(".js-hamburger");

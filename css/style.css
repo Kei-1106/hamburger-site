@@ -320,9 +320,10 @@ html {
 }
 
 body {
-  font-family: "M+ 1m", Meiryo, "Roboto", Roboto, "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Osaka, sans-serif;
+  font-family: "m-plus-1m", Meiryo, "Roboto", Roboto, "YuGothic", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "メイリオ", Osaka, sans-serif;
   background-color: #fffdfa;
   overflow-x: hidden;
+  font-style: normal;
 }
 
 img {
@@ -343,7 +344,7 @@ a, text, span, div {
   color: #707070;
 }
 
-button, input[type=button], a {
+button, input[type=submit], a {
   cursor: pointer;
 }
 
@@ -1431,21 +1432,22 @@ cite {
   flex-direction: column;
 }
 .p-card__inner--middle {
+  height: 100%;
   justify-content: space-between;
 }
 @media screen and (max-width: 428px) {
   .p-card__inner--middle {
-    min-height: 616px;
+    gap: 283.7px;
   }
 }
 @media screen and (min-width: 429px) and (max-width: 960px) {
   .p-card__inner--middle {
-    min-height: 654px;
+    gap: 283.4px;
   }
 }
 @media screen and (min-width: 961px) {
   .p-card__inner--middle {
-    min-height: 1167px;
+    gap: 660.5px;
   }
 }
 .p-card__inner--middle-bottom {
@@ -1479,14 +1481,13 @@ cite {
     padding-bottom: 9px;
   }
 }
-@media screen and (min-width: 429px) and (max-width: 960px) {
-  .p-card__link {
-    width: 50%;
-  }
+.p-card__link {
+  display: flex;
+  width: 50%;
 }
-@media screen and (min-width: 961px) {
+@media screen and (max-width: 428px) {
   .p-card__link {
-    width: 50%;
+    width: 100%;
   }
 }
 
