@@ -20,9 +20,13 @@
         z-index: 800;
         padding: 39px 0 34px 0;
         justify-content: center;
-        &--right{
-            border-left: solid 2px v.$color_white;
+        & li {
+            padding: 0 10px 0 10px;
         }
+        & li+ li {
+                padding: 0 10px 0 10px;
+                border-left: solid 2px v.$color_white;;
+            }
         &-active {
             z-index: unset;
         }

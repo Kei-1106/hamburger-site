@@ -9,10 +9,10 @@
         width: 367px;
     }
     &__inner {
-        padding-top: 212px;
+        padding-top: 164px;
     }
     &__title {
-        padding-left: 46px;
+        padding: 48px 0 12px 46px;
     }
     &__hamburger {
     transform: translateX(0);
@@ -41,11 +41,9 @@
     }
     &__item {
         margin-top: 22px;
+        padding-left: 66px;
     }
     &__list {
-        padding: 40px 0 34px 66px;
-        @include m.mq(pc){
-            padding: 36px 0 49px 66px;
-        }
+        padding: 12px 0 48px 66px;
     }
 }

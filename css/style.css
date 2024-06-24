@@ -378,7 +378,11 @@ cite {
   padding: 39px 0 34px 0;
   justify-content: center;
 }
-.l-footer__inner--right {
+.l-footer__inner li {
+  padding: 0 10px 0 10px;
+}
+.l-footer__inner li + li {
+  padding: 0 10px 0 10px;
   border-left: solid 2px #fff;
 }
 .l-footer__inner-active {
@@ -583,10 +587,10 @@ cite {
   }
 }
 .l-sidebar__inner {
-  padding-top: 212px;
+  padding-top: 164px;
 }
 .l-sidebar__title {
-  padding-left: 46px;
+  padding: 48px 0 12px 46px;
 }
 .l-sidebar__hamburger {
   transform: translateX(0);
@@ -623,14 +627,10 @@ cite {
 }
 .l-sidebar__item {
   margin-top: 22px;
+  padding-left: 66px;
 }
 .l-sidebar__list {
-  padding: 40px 0 34px 66px;
-}
-@media screen and (min-width: 961px) {
-  .l-sidebar__list {
-    padding: 36px 0 49px 66px;
-  }
+  padding: 12px 0 48px 66px;
 }
 
 @media screen and (max-width: 428px) {
